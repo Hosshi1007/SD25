@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*タブレット一覧共有*/
+header{
+    background-color: #222;
+}
+
+
+nav{
+    padding: 10px;
+
+    background-color: #666;
+}
+
+nav button{
+    padding: 25px;
+}
+
+
+main{
+    float: left;
+
+    height:500px;
+    width: 70%;
+
+    background-color: #888;
+}
+
+
+sub-nav{
+    float: right;
+
+    height:500px;
+    width: 30%;
+
+    background-color: #aaa;
+}
+
+
+footer{
+    background-color: #eee;
+}
+
+/* <nav>のlist */
+.list_nav{
+    justify-content: center;
+    background-color: #0f0;
+}

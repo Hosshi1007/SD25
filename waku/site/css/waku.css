@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+
+body{
+
+}
+
+div#wrap{
+  background-color: red;
+  height: 87vh;
+  width: 100%;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+header{
+  background-color: #15202b;
+  width: 100%;
+  height: 15%;
+  display: flex;
+}
+
+#icon{
+  height: 100%;
+  width: 15%;
+  padding: 10px 0 0 0;
+  background-color: #15202b;
+}
+
+#icon a{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+div#h1{
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#textbox{
+  width: 90%;
+  color: #fff;
+  font-size: 44px;
+  border: 2px solid #fff;
+  padding: 15px;
+  border-radius: 35px;
+}
+
+#icon img{
+  width: 80px;
+  height: 80px;
+}
+
+#icon p{
+  color: white;
+  font-size: 22px;
+}
+
+
+nav{
+  background-color: #15202b;
+  height: 100%;
+  width: 15%;
+}
+
+#gloval-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.nav_textbox{
+  width: 80%;
+  height: 13%;
+  color: #fff;
+  font-size: 26px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  background-color: #15202b;
+  width: 85%;
+  height: 100%;
+}
+
+div#h2{
+  margin: 15px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+#textbox2{
+  width: 80%;
+  height: 15%;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 15px;
+  border-radius: 35px;
+}
+
+
+#gamen{
+  background-color: #15202b;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+#form{
+  padding: 50px 100px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form input{
+  width: 200px;
+}
+
+#form label{
+  color: #fff;
+  margin: 0 0 20px 0;
+  display: flex;
+}
+
+#button{
+  position: absolute;
+  right: 150px;
+  bottom: 50px;
+  display       : inline-block;
+  border-radius : 5%;
+  font-size     : 18pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 12px 80px;
+  background    : #7979ec;
+  color         : #ffffff;
+  line-height   : 1em;
+  transition    : .3s;
+  box-shadow    : 4px 4px 2px #666666;
+  border        : 2px solid #000066;
+}
+
+#button:hover {
+  box-shadow    : none;
+  color         : #000066;
+  background    : #ffffff;
+}
+
+.nav_textbox a{
+  display: block;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  line-height: 80px;
+  text-decoration: none;
+}
+
+div.input_left{
+  width: 100px;
+  text-align: right;
+}
