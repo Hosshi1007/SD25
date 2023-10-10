@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <title>3.html</title>
+    <title>108.html</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
@@ -32,7 +32,7 @@
         </div>
         <div id="h1">
           <div id="textbox">
-            いんでっくすHTML
+            在庫一覧 閲覧/検索
           </div>
         </div>
       </header>
@@ -63,133 +63,49 @@
       <main>
         <div id="h2">
           <div id="textbox2">
-            基本構成見本画面です<br>
-            だいたいこんなかんじですか？
+            条件を入力して、在庫を検索できます。表の項目をクリックすると詳細画面へ遷移します。<br>
+            在庫ID: <input type="text" name="zaiko_id" placeholder="在庫ID">  分類:<input type="text" name="bunrui" placeholder="分類"> <br>
+            名称:<input type="text" name="name" placeholder="名称"> 過不足:<input type="text" name="kabusoku" placeholder="充足or不足"> <div="button"><input type="submit" value="検索"></div>
           </div>
         </div>
-
-
-        <div id="gamen">
-          <form id="form" method="post" action="dummy.html">
-            <label class="input_label">
-              <div class="input_left">姓：</div>
-              <input type="text" name="sei" maxlength="10" placeholder="姓" required>
-            </label>
-            <label>
-              <div class="input_left">名：</div>
-              <input type="text" name="sei" maxlength="10" placeholder="名" required>
-            </label>
-            <label>
-              <div class="input_left">セイ：</div>
-              <input type="text" name="sei" maxlength="10" placeholder="セイ" required>
-            </label>
-            <label>
-              <div class="input_left">メイ：</div>
-              <input type="text" name="sei" maxlength="10" placeholder="メイ" required>
-            </label>
-            <button id="button" type="submit">登録</button>
-          </form>
-
-          <div class="table">
-              <table class="findID">
-                <tr>
-                  <th>会員ID</th>
-                  <th>姓</th>
-                  <th>名</th>
-                  <th>セイ</th>
-                  <th>メイ</th>
-                  <th>職業</th>
-                  <th>住所</th>
-                  <th>メールアドレス</th>
-                </tr>
-                <tr onclick="tr_click(1);" class="hover">
-                  <td>00001</td>
-                  <td>武</td>
-                  <td>豊</td>
-                  <td>タケ</td>
-                  <td>ユタカ</td>
-                  <td>学生</td>
-                  <td>HAL名古屋</td>
-                  <td>exsample@@@exsample.</td>
-                </tr>
-                <tr onclick="tr_click(2);" class="hover">
-                  <td>00002</td>
-                  <td>纐纈</td>
-                  <td>人間</td>
-                  <td>コウケツ</td>
-                  <td>ヒューマン</td>
-                  <td>学生</td>
-                  <td>火星</td>
-                  <td>exsample@@</td>
-                </tr>
-                <tr onclick="tr_click(3);" class="hover">
-                  <td>00003</td>
-                  <td>工藤</td>
-                  <td>進一</td>
-                  <td>クドウ</td>
-                  <td>シンイチ</td>
-                  <td>探偵</td>
-                  <td>ベイカー街</td>
-                  <td>exsample@@</td>
-                </tr>
-                <tr onclick="tr_click(4);" class="hover">
-                  <td>00004</td>
-                  <td>林</td>
-                  <td>米</td>
-                  <td>ハヤシ</td>
-                  <td>ライス</td>
-                  <td>養分</td>
-                  <td>飲食店</td>
-                  <td>exsample@@</td>
-                </tr>
-                <tr onclick="tr_click(5);" class="hover">
-                  <td>00005</td>
-                  <td>川原</td>
-                  <td>成雄弓</td>
-                  <td>カワハラ</td>
-                  <td>ナオユミ</td>
-                  <td>武器</td>
-                  <td>関ケ原</td>
-                  <td>exsample@@</td>
-                </tr>
-              </table>
-            </div>
-
-            <br><br><br>
 
             <div id="table2">
               <table>
                 <tr>
-                  <th>会員ID</th>
-                  <td>00001</td>
+                  <th>発注ID</th>
+                  <td>001</td>
+                  <td>002</td>
+                  <td>003</td>
                 </tr>
                 <tr>
-                  <th>姓</th>
-                  <td>武</td>
+                  <th>発注日</th>
+                  <td>2023/08/30</td>
+                  <td>2023/09/26</td>
+                  <td>2023/09/26</td>
                 </tr>
                 <tr>
-                  <th>名</th>
-                  <td>ユタカ</td>
+                  <th>納入予定日</th>
+                  <td>2023/09/05</td>
+                  <td>2023/09/30</td>
+                  <td>2023/09/30</td>
                 </tr>
                 <tr>
-                  <th>セイ</th>
-                  <td>タケ</td>
+                  <th>名称</th>
+                  <td>フライドポテト</td>
+                  <td>チキンナゲット</td>
+                  <td>バニラアイス</td>
                 </tr>
                 <tr>
-                  <th>メイ</th>
-                  <td>ユタカ</td>
+                  <th>注文数</th>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>100</td>
                 </tr>
                 <tr>
-                  <th>職業</th>
-                  <td>学生</td>
-                </tr>
-                <tr>
-                  <th>住所</th>
-                  <td>愛知県名古屋市中村区名駅４丁目２７−１ 総合校舎スパイラルタワーズ</td>
-                </tr>
-                <tr>
-                  <th>メールアドレス</th>
-                  <td>example@example.sa.ac.jp</td>
+                  <th>ステータス</th>
+                  <td>入荷済み</td>
+                  <td>納入待ち</td>
+                  <td>納入待ち</td>
                 </tr>
               </table>
             </div>
