@@ -65,53 +65,41 @@
           <div id="textbox2">
             条件を入力して、在庫を検索できます。表の項目をクリックすると詳細画面へ遷移します。<br>
             在庫ID: <input type="text" name="zaiko_id" placeholder="在庫ID">  分類:<input type="text" name="bunrui" placeholder="分類"> <br>
-            名称:<input type="text" name="name" placeholder="名称"> 過不足:<input type="text" name="kabusoku" placeholder="充足or不足"> <div="button"><input type="submit" value="検索"></div>
+            名称:<input type="text" name="name" placeholder="名称"> 過不足:<input type="text" name="kabusoku" placeholder="充足or不足"> <div="button"><a href="#">検索</a></div>
           </div>
         </div>
-
-            <div id="table2">
-              <table>
-                <tr>
-                  <th>発注ID</th>
-                  <td>001</td>
-                  <td>002</td>
-                  <td>003</td>
-                </tr>
-                <tr>
-                  <th>発注日</th>
-                  <td>2023/08/30</td>
-                  <td>2023/09/26</td>
-                  <td>2023/09/26</td>
-                </tr>
-                <tr>
-                  <th>納入予定日</th>
-                  <td>2023/09/05</td>
-                  <td>2023/09/30</td>
-                  <td>2023/09/30</td>
-                </tr>
-                <tr>
-                  <th>名称</th>
-                  <td>フライドポテト</td>
-                  <td>チキンナゲット</td>
-                  <td>バニラアイス</td>
-                </tr>
-                <tr>
-                  <th>注文数</th>
-                  <td>500</td>
-                  <td>500</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <th>ステータス</th>
-                  <td>入荷済み</td>
-                  <td>納入待ち</td>
-                  <td>納入待ち</td>
-                </tr>
-              </table>
-            </div>
-            
-
-
+        
+        <div class="table">
+          <table class="findID">
+            <tr>
+              <th>発注ID</th>
+              <th>名称</th>
+              <th>分類</th>
+              <th>在庫</th>
+              <th>安全在庫</th>
+            </tr>
+            <tr onclick="tr_click(1);" class="hover">
+              <td>001</td>
+              <td>フライドポテト</td>
+              <td>フード</td>
+              <td>500</td>
+              <td>150</td>
+            </tr>
+            <tr onclick="tr_click(2);" class="hover">
+              <td>002</td>
+              <td>チキンナゲット</td>
+              <td>フード</td>
+              <td>300</td>
+              <td>150</td>
+            </tr>
+            <tr onclick="tr_click(3);" class="hover">
+              <td>003</td>
+              <td>バニラアイス</td>
+              <td>フード</td>
+              <td>30</td>
+              <td>50</td>
+            </tr>
+          </table>
         </div>
 
 
