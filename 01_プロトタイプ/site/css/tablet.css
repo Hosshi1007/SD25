@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*タブレット共通*/
+
+html{
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#annotation{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: black;
+  font-size: 32px;
+}
+
+body{
+  width: 1024px;
+  height: 768px;
+  background-color: #C62828;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+header{
+  color: white;
+  background-color: #15202b;
+  width: 1024px;
+  height: 40px;
+}
+
+div#icon{
+  height: 40px;
+}
+
+div#icon a{
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+div#icon img{
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 10px;
+}
+
+main{
+  width: 1024px;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+main h1{
+  margin: 100px 0 200px 0;
+  font-size: 40px;
+}
+
+main h2{
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+
+/*ボタンのcss*/
+
+.btn_start{
+    width:700px;
+    height:100px;
+    line-height:80px;
+}
+.btn_start{
+    display:block;
+    margin: 100px auto 0 auto;
+    text-decoration: none;
+    background:#FFA968;
+    text-align:center;
+    color:#FFFFFF;
+    font-size:30px;
+    font-weight:bold;
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    box-shadow:5px 5px 0px 0px #000;
+}
+.btn_start:hover{
+    color:#FFFC00;
+}
+
+
