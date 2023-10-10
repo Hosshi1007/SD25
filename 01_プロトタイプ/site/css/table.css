@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*共通のスタイル*/
+
+.table{
+  margin-top: 30px;
+  color: white;
+  border: 3px solid #f5f5f5;
+  width: 80%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.table tr.hover:hover{
+  opacity: 0.5;
+  background-color: dimgrey;
+  cursor: pointer;
+}
+
+.table th{
+  width: 12.5%;
+  padding: 5px;
+  background-color: #e6e6fa;
+  color: black;
+}
+
+.table th:first-child{
+  width: 8%;
+}
+
+.table th:last-child{
+  width: 17%;
+}
+
+
+.table td{
+  padding: 5px;
+  border: 1.5px solid #f5f5f5;
+}

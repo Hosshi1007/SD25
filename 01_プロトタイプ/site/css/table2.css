@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*共通のスタイル*/
+
+/*table2*/
+
+#table2{
+  margin-top: 30px;
+  color: white;
+  border: 3px solid #f5f5f5;
+  width: 80%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#table2 th{
+  
+  padding: 10px 5px;
+  background-color: #e6e6fa;
+  color: black;
+  border-bottom: 1.5px solid #000;
+}
+
+#table2 td{
+
+  text-align: left;
+  padding: 10px 5px;
+  padding-left: 15px;
+  border-bottom: 1.5px solid #f5f5f5;
+}
