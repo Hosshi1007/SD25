@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*タブレット共通*/
+
+html{
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#annotation{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: black;
+  font-size: 30px;
+}
+
+body{
+  width: 1024px;
+  height: 768px;
+  background-color: #C62828;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header{
+  color: white;
+  background-color: #15202b;
+  width: 1024px;
+  height: 40px;
+}
+
+div#icon{
+  height: 40px;
+}
+
+div#icon a{
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+div#icon img{
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 10px;
+}
+
+p#roomID{
+  position: absolute;
+  right: 450px;
+  top: 110px;
+  font-size: 16px;
+  color: white;
+}
