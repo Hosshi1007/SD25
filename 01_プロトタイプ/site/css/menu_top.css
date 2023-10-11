@@ -3,6 +3,7 @@
 /*タブレット共通*/
 
 main{
+  position: relative;
   width: 1024px;
   height: 768px;
   display: flex;
