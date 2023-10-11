@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>利用開始画面</title>
+        <title>メニュー一覧 閲覧/検索</title>
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/tb_common.css" type="text/css">
-        <link rel="stylesheet" href="css/tablet_riyouTOP.css" type="text/css">
+        <link rel="stylesheet" href="css/menu_top.css" type="text/css">
+        <script type="text/javascript" src="js/common.js"></script>
     </head>
     <body>
         <header>
@@ -21,15 +22,106 @@
 
         <main>
             <p id="roomID">部屋NO：101号室</p>
-            <h1>カラオケボックス まさる堂</h1>
-            <h2>ご利用にあたって</h2>
-            <h2>各種注意事項をお読みになった上でご利用ください。<br>
-                よろしければENTERボタンを押してください。</h2>
-            <div id="div_btn">
-                <button type="button" class="btn_start" onclick="location.href='128.html'">ご利用にあたっての注意事項</button>
-                <button type="button" class="btn_start" onclick="location.href='128.html'">プライバシーポリシー</button>
-                <button type="button" class="btn_start" onclick="location.href='128.html'">災害時の対応</button>
-                <button type="button" class="btn_enter" onclick="location.href='131.html'">ENTER</button>
+            <div id="menu_nav">
+                <button type="button" class="btn_menu_nav" onclick="location.href='dummy.html'">TOP</button>
+                <button type="button" class="btn_menu_nav" onclick="location.href='dummy.html'">フード</button>
+                <button type="button" class="btn_menu_nav" onclick="location.href='dummy.html'">ドリンク</button>
+                <button type="button" class="btn_menu_nav" onclick="location.href='dummy.html'">アルコール</button>
+                <button type="button" class="btn_menu_nav" onclick="location.href='dummy.html'">デザート</button>
+                <button type="button" class="btn_menu_nav" onclick="location.href='dummy.html'">デザート</button>
+                <button type="button" class="btn_menu_nav" onclick="location.href='dummy.html'">サービス</button>
+                <button type="button" class="btn_menu_nav" onclick="location.href='dummy.html'">注文履歴</button>
+            </div>
+
+            <div id="window_main">
+                <div class="window_sub" onclick="menu_click(1);">
+                    <img src="images/S.I.N.G.S.png">
+                    <p>激熱ポテト</p>
+                </div>
+                <div class="window_sub">
+                    <img src="images/S.I.N.G.S.png">
+                    <p>激熱ポテト</p>
+                </div>
+                <div class="window_sub">
+                    <img src="images/S.I.N.G.S.png">
+                    <p>激熱ポテト</p>
+                </div>
+                <div class="window_sub">
+                    <img src="images/S.I.N.G.S.png">
+                    <p>激熱ポテト</p>
+                </div>
+                <div class="window_sub">
+                    <img src="images/S.I.N.G.S.png">
+                    <p>激熱ポテト</p>
+                </div>
+                <div class="window_sub">
+                    <img src="images/S.I.N.G.S.png">
+                    <p>激熱ポテト</p>
+                </div>
+                <div class="window_sub">
+                    <img src="images/S.I.N.G.S.png">
+                    <p>激熱ポテト</p>
+                </div>
+                <div class="window_sub">
+                    <img src="images/S.I.N.G.S.png">
+                    <p>激熱ポテト</p>
+                </div>
+                <div class="window_sub">
+                    <img src="images/S.I.N.G.S.png">
+                    <p>激熱ポテト</p>
+                </div>
+            </div>
+
+            <div id="window_cart">
+                <table>
+                    <tr>
+                        <th>商品名</th>
+                        <th>数量</th>
+                        <th>削除</th>
+                    </tr>
+                    <tr>
+                        <td>激熱ポテト</td>
+                        <td>1</td>
+                        <td><button type="button" class="btn_cart" onclick="location.href='dummy.html'">削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>激熱ポテト</td>
+                        <td>1</td>
+                        <td><button type="button" class="btn_cart" onclick="location.href='dummy.html'">削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>激熱ポテト</td>
+                        <td>1</td>
+                        <td><button type="button" class="btn_cart" onclick="location.href='dummy.html'">削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>激熱ポテト</td>
+                        <td>1</td>
+                        <td><button type="button" class="btn_cart" onclick="location.href='dummy.html'">削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>激熱ポテト</td>
+                        <td>1</td>
+                        <td><button type="button" class="btn_cart" onclick="location.href='dummy.html'">削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>激熱ポテト</td>
+                        <td>1</td>
+                        <td><button type="button" class="btn_cart" onclick="location.href='dummy.html'">削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>激熱ポテト</td>
+                        <td>1</td>
+                        <td><button type="button" class="btn_cart" onclick="location.href='dummy.html'">削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>激熱ポテト</td>
+                        <td>1</td>
+                        <td><button type="button" class="btn_cart" onclick="location.href='dummy.html'">削除</button></td>
+                    </tr>
+                </table>
+
+                <button type="button" class="btn_cart_go" onclick="location.href='dummy.html'">注文に進む</button>
             </div>
         </main>
 
