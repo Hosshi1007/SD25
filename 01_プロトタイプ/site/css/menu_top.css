@@ -68,7 +68,6 @@ div.window_sub{
 div#window_cart{
   width: 314px;
   height: 628px;
-  background-color: #aaa;
   display: flex;
   flex-direction: column;
   align-items: center;
