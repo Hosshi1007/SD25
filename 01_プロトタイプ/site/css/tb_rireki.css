@@ -67,6 +67,7 @@ table td{
   border-right: 1.5px solid #000;
 }
 
+/*戻るボタン*/
 .btn_menu_nav{
   position: absolute;
   top: 10px;
@@ -78,4 +79,58 @@ table td{
   color: white;
   font-size: 16px;
   border-radius: 20px;
+}
+
+/*確認のtable*/
+#t_kakunin{
+  width: 700px;
+  height: 350px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: auto;
+}
+
+#t_kakunin::-webkit-scrollbar{
+  display: none;
+}
+
+#t_kakunin table{
+  width: 700px;
+  border: 1.5px solid #000;
+}
+
+#t_kakunin table th{
+  height: 30px;
+  padding: 5px;
+  background-color: #ff8c00;
+  line-height: 30px;
+  border-bottom: 2px solid #000;
+  border-right: 1.5px solid #000;
+}
+
+#t_kakunin table th:first-child,
+#t_kakunin table th:nth-child(3),
+#t_kakunin table th:nth-child(4){
+  width: 10%;
+}
+
+#t_kakunin table th:nth-child(2){
+  width: 70%;
+}
+
+#t_kakunin table td{
+  height: 25px;
+  padding: 5px;
+  line-height: 25px;
+  border-bottom: 1.5px solid #000;
+  border-right: 1.5px solid #000;
+}
+
+/*注文ボタン*/
+.btn_order{
+  position: absolute;
+  top: 600px;
+  left: 412px;
+  width: 200px;
 }
