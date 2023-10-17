@@ -60,3 +60,100 @@ p#roomID{
   font-size: 16px;
   color: white;
 }
+
+main.main_135{
+  width: 1024px;
+}
+
+.flex_btn_2{
+  width: 1024px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn_def{
+  width: 300px;
+  height: 200px;
+  background-color: #ff8c00;
+  font-size: 35px;
+  box-shadow: 2px 2px black;
+  border-radius: 30px;
+}
+
+/*132のcss*/
+.window_sub_132{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.window_sub_132 p{
+  font-size: 30px;
+  margin: 20px 0 0 0;
+  color: white;
+}
+
+.img_132{
+  width: 80%;
+  height: 80%;
+}
+
+.comment_132{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 350px;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #15202b;
+}
+
+/*カウンターのcss*/
+.container {
+  width: 300px;
+  margin: 40px 0 0 0;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputtext {
+  color:rgba(43, 32, 32, 0.76) ;
+  font-size: 18px;
+  width: 80px;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.button {
+  height: 50px;
+  color:rgba(43, 32, 32, 0.76) ;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 25px;
+  background-color: white;
+  border: 1px solid #D7DBDD;
+  border-radius: 0;
+  outline: 0;
+}
+
+.resetbtn {
+  margin: 5px 0 0 95px;
+}
+
+.btn_cart_go_133{
+  width: 250px;
+  height: 100px;
+  margin: 10px 0 0 0;
+  background-color: #ff8c00;
+  font-size: 30px;
+  box-shadow: 2px 2px black;
+}

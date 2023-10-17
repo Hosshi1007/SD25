@@ -10,14 +10,37 @@ function tr_click(num){
 }
 
 function menu_click(hoge){
-  alert("aaa");
   //遷移するメニューIDを取得
-  let url_go = "menu_" + hoge + ".html";
-  alert(url_go);
+  //let url_go = "menu_" + hoge + ".html";
+  let url_go = "132.html";
 
   //詳細ページに移動
   window.location.href = url_go;
 }
 
+(() => {
+  //HTMLのid値を使って以下のDOM要素を取得
+  const downbutton = document.getElementById('down');
+  const upbutton = document.getElementById('up');
+  const text = document.getElementById('textbox');
+  const reset = document.getElementById('reset');
 
+  //ボタンが押されたらカウント減
+  downbutton.addEventListener('click', (event) => {
+  //0以下にはならないようにする
+  if(text.value >= 1) {
+    text.value--;
+  }
+  });
 
+  //ボタンが押されたらカウント増
+  upbutton.addEventListener('click', (event) => {
+    text.value++;
+  })
+
+  //ボタンが押されたら0に戻る
+  reset.addEventListener('click', (event) => {
+    text.value = 0;
+  })
+
+})();

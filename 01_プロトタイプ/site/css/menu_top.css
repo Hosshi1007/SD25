@@ -26,7 +26,6 @@ div#menu_nav{
   color: white;
   font-size: 16px;
   border-radius: 20px;
-
 }
 
 div#window_main{
@@ -52,6 +51,11 @@ div.window_sub{
   flex-direction: column;
   align-items: center;
 }
+
+div.window_sub:hover{
+  opacity: 0.5;
+}
+
 
 .window_sub img{
   width: 200px;
@@ -107,7 +111,7 @@ table td:nth-child(2){
 .btn_cart_go{
   width: 250px;
   height: 100px;
-  margin: 70px 0 0 0;
+  margin: 40px 0 0 0;
   background-color: #ff8c00;
   font-size: 35px;
   box-shadow: 2px 2px black;
