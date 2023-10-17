@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*分析のHTMLのスタイル*/
+/*67~71,77*/
+
+/*67~71*/
+.select{
+    /*text用*/
+    width: 400px;
+    height: 40px;
+
+    /*Date用*/
+    padding-left: 97.685px;
+    padding-right: 97.685px;
+}
+
+.upbr{
+    padding-top: 20px;
+}
+
+/*77*/
+.mozi{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.mozi_e{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #f00;
+    font-size: 24px;
+}

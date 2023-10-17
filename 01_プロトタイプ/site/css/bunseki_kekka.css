@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*分析結果のHTMLのスタイル*/
+
+/*72~76*/
+
+table{
+    margin: auto 0;
+    background-color: #fff;
+}
+
+table tr td{
+    font-size: 30px;
+    padding: 20px 30px 20px 10px;
+    border: solid 1px;
+}
+
+.number{
+    padding-left: 40px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.kensaku_zilyouken{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.tab_space{
+    margin-left: 120px;
+}

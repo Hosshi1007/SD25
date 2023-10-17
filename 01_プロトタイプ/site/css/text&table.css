@@ -1,0 +1,8 @@
+@charset "uft-8";
+
+/*textとtableのスタイル*/
+/*76*/
+
+.text_table{
+    flex-direction: column;
+}

@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*エラー画面のスタイル*/
+
+.input_e{
+    box-sizing: border-box;
+    border: #f00 solid 4px;
+}
+
+.text_e{
+    color: #f00;
+}
