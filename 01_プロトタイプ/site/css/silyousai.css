@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*81.html*/
+
+table{
+    margin: 50px auto;
+}
+
+table tr{
+    border: solid 1px #fff;
+}
+
+table tr th{
+    padding: 10px 10px 10px 100px;
+
+    text-align: right;
+    font-size: 24px;
+    background-color: #4169e1;
+    color: #fff;
+}
+
+table tr td{
+    padding: 10px 700px 10px 50px;
+
+    text-align: left;
+    font-size: 24px;
+    background-color: aliceblue;
+    color: #000;
+}

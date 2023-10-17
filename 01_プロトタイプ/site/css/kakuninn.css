@@ -8,8 +8,6 @@ table{
     background-color: #fff;
 }
 
-table tr{}
-
 table tr td{
     text-align: center;
 }
@@ -21,6 +19,7 @@ div#mozi{
     font-size: 24px;
 }
 
+/*
 button#hai{
     padding: 15px 45px;
     font-size: 24px;
@@ -31,4 +30,27 @@ button#hai{
 button#hai a{
     text-decoration: none;
     color: #fff;
+}
+*/
+
+div#gamen button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+button#itirann{
+    padding: 15px 45px;
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: #cdcd00;
+}
+
+button#itirann a{
+    text-decoration: none;
+    color: #000;
+}
+
+div#margin{
+    text-align: center;
+    margin: auto 0;
 }
