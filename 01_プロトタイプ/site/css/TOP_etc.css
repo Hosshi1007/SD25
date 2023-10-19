@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #15202b;
+}
+
+.btn_big1{
+  width: 27%;
+  height: 75%;
+  border-radius: 25px;
+  font-size: 28px;
+  background-color: #ffd700;
+}
+
+
+main#main_TOPetc{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main#main_TOPetc h1{
+  height: 20%;
+  width: 100%;
+  font-size: 3.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexbox{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flexbox2{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bg_orenge{
+  background-color: #ff8c00;
+}
+
