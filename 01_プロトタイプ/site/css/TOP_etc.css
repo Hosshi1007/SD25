@@ -58,3 +58,42 @@ main#main_TOPetc h1{
   background-color: #15202b;
 }
 
+#icon_top{
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  height: 5%;
+  width: 15%;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+#icon_top:hover{
+  opacity: 0.6;
+}
+
+#icon_top a{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: #fff;
+}
+
+#icon_top img{
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  min-height: 80px;
+}
+
+#icon_top p{
+  color: white;
+  font-size: 22px;
+  margin: 0 5px 0 5px;
+  width: 40%;
+}
