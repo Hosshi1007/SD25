@@ -1,0 +1,140 @@
+#gamen{
+  width:100%;
+  height:100%;
+  padding:  10px;             /* 余白指定 */
+  display: flex;              /* フレックスボックスにする */
+  flex-wrap: wrap;            /* 折り返し指定 */
+  align-items: center;
+}
+#button.kaiin {
+  position: initial;
+  width:40%;
+  height:40%;
+}
+.kaiin{
+  padding: 10px;
+  margin:  10px;              /* 外側の余白 */
+  border-radius:  5px;        /* 角丸指定 */
+  font-size:  30px;           /* 文字サイズ */
+  width: 200px;               /* 幅指定 */
+  text-align:  center;        /* 文字中央揃え */
+}
+#form.kakunin3{
+  padding:50px 50px 0 0;
+}
+#kakunin3{
+  padding:50px;
+  color:white;
+}
+#kakunin4{
+  font-weight:bold;
+  color:white;
+  font-size:1.5rem;
+  margin:5% 0 0 0;
+  text-align:center;
+}
+#kakunin4.html17_2{
+  color:red;
+  text-shadow:1px 2px 3px black;
+}
+#kakunin4.html17_22{
+  text-shadow:1px 2px 3px black;
+}
+#kakunin4.kanryou4{
+  font-size:2rem;
+  margin:200px 0 0 0;
+}
+#button.kanryou4{
+  position:initial;
+  margin:0 20px 0 0;
+}
+html,body{
+  overflow: hidden;
+  height:100%;
+  width:100%;
+}
+div#html5.date{
+  margin:0 0 0 21%;
+  text-align: left;
+}
+button#button.html5{
+  font-size:1.3rem;
+  margin:0 0 0 22%;
+  padding:5px 30px;
+  position:initial;
+}
+div#html5.html5{
+  color:white;
+  margin:1% 73% 0 0;
+}
+div.table.findID{
+  height:168px;
+  overflow:auto;
+}
+div#html.table{
+  height:160px;
+}
+th#html5{
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+td{
+  white-space:nowrap
+}
+div#html6.table{
+  text-align:left;
+  margin-top:6%;
+  margin-right:5%;
+  padding:5px;
+  background-color: lightgray;
+  color:black;
+  font-size:1.8rem;
+  width:initial;
+}
+div#html12.table{
+  width:90%;
+}
+div#html13.table{
+  width:initial;
+  text-align: left;
+  font-size:1.7rem;
+}
+div#html13.table th{
+  border: 1px solid white;
+  width:30%;
+  background-color:rgb(68 115 197);
+  text-align:right;
+  padding-right:7px;
+  color:white;
+}
+div#html13.table td{
+  color:black;
+  background-color:rgb(207 213 235);
+  padding-left:20px;
+}
+div#html13.table tr:nth-child(odd) td{
+  background-color:rgb(232 235 244);
+}
+button#html14{
+  margin:15px;
+}
+input#sex{
+  width:initial;
+}
+div#html14{
+  width:130px;
+}
+#form label#html14{
+  margin-right:60px;
+}
+#form label#html14_yuubin{
+  margin-top:-15px;
+  margin-bottom:-0.1px;
+ margin-left:40px;
+}
+button#button.html17{
+  background: red;
+  box-shadow: 4px 4px 2px pink;
+  border: 2px solid black;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+
+    <title>5.html</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/waku.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/table2.css">
+    <link rel="stylesheet" type="text/css" href="css/kaiin.css">
+    <script type="text/javascript" src="js/common.js"></script>
+
+  </head>
+
+
+  <body>
+
+    <div id="wrap">
+      <header>
+        <div id="icon">
+          <a href="dummy.html">
+            <img src="images/S.I.N.G.S.png">
+            <p>従業員用 from S.I.N.G.S</p>
+          </a>
+        </div>
+        <div id="h1">
+          <div id="textbox">
+            予約 一覧/閲覧/検索 
+          </div>
+        </div>
+      </header>
+
+
+      <nav id="gloval-nav">
+        <div class="nav_textbox">
+          <a href="1.html">会員用TOP</a>
+        </div>
+        <div class="nav_textbox">
+          <a href="dummy.html"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="dummy.html"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="dummy.html"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="dummy.html"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="dummy.html"></a>
+        </div>
+      </nav>
+
+
+      <main>
+        <div id="h2">
+          <div id="textbox2">
+            条件を入力して会員を検索できます。<br>
+            項目をクリックすると詳細画面へ遷移します。<br>
+            表をクリックすると予約の詳細を確認できます。<br>
+            <div id="html5" class="date">
+            予約日:
+            <input type="date">
+            <button id="button" class="html5" onclick="location.href='5.html'">検索</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="gamen">
+
+          <div id="html5" class="html5">検索条件
+          <select>
+            <option>全て</option>
+          </select>
+          </div>
+
+
+          <div id="html5" class="table">
+            <table class="findID">
+              <tr>
+                <th>予約ID</th>
+                <th>予約日</th>
+                <th>来店時間</th>
+                <th>予約人数</th>
+              </tr>
+              <tr onclick="appoint_click(1);" class="hover">
+                <td>00001</td>
+                <td>2023年9月22日</td>
+                <td>22:00</td>
+                <td>3人</td>
+              </tr>
+              <tr onclick="appoint_click(2);" class="hover">
+                <td>00002</td>
+                <td>2023年9月22日</td>
+                <td>22:15</td>
+                <td>2人</td>
+              </tr>
+              <tr onclick="appoint_click(3);" class="hover">
+                <td>00003</td>
+                <td>2023年9月22日</td>
+                <td>22:20</td>
+                <td>6人</td>
+              </tr>
+              <tr onclick="appoint_click(4);" class="hover">
+                <td>00004</td>
+                <td>2023年9月22日</td>
+                <td>22:40</td>
+                <td>4人</td>
+              </tr>
+              <tr onclick="appoint_click(5);" class="hover">
+                <td>00005</td>
+                <td>2023年9月22日</td>
+                <td>23:00</td>
+                <td>1人</td>
+              </tr>
+              <tr onclick="appoint_click(6);" class="hover">
+                <td>00006</td>
+                <td>2023年9月22日</td>
+                <td>23:30</td>
+                <td>5人</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+
+
+
+
+      </main>
+
+
+    </div>
+    
+
+  </body>
+
+</html>

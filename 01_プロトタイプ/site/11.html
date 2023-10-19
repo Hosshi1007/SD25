@@ -6,15 +6,17 @@
 
     <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <title>枠原本</title>
+    <title>11.html</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/table2.css">
     <link rel="stylesheet" type="text/css" href="css/kaiin.css">
-    <script type="text/javascript" src="common.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 
   </head>
 
@@ -24,14 +26,14 @@
     <div id="wrap">
       <header>
         <div id="icon">
-          <a href="index.html">
+          <a href="dummy.html">
             <img src="images/S.I.N.G.S.png">
             <p>従業員用 from S.I.N.G.S</p>
           </a>
         </div>
         <div id="h1">
           <div id="textbox">
-            予約登録 登録内容確認
+            予約変更
           </div>
         </div>
       </header>
@@ -48,7 +50,7 @@
           <a href="dummy.html"></a>
         </div>
         <div class="nav_textbox">
-          <a href="2.html">修正</a>
+          <a href="dummy.html"></a>
         </div>
         <div class="nav_textbox">
           <a href="dummy.html"></a>
@@ -60,29 +62,22 @@
 
 
       <main>
-        <div id="h2">
-          <div id="textbox2">
-            入力内容を確認して、よろしければ「登録」ボタンを押してください。<br>
-            修正したい場合は「修正」ボタンを押してください。
-          </div>
-        </div>
-        
-        <div id="kakunin4">
-        以下の内容を確定します。<br>
-        よろしいですか？
-        </div>
+
 
         <div id="gamen">
-          <form id="form" class="kakunin3" method="post" action="dummy.html">
-            <div id="kakunin3" style="border: solid 1px white">
-              予約日時 XX月XX日<br>
-              予約時間 YY時YY分<br>
-              　予約人数 ZZ人
-              </div>
-            </form>
-            <button id="button" onclick="location.href='4.html'">登録</button>
 
+          <div id="kakunin4" class="kanryou4">
+          予約の削除が完了しました。
+           </div>
+           
+           <div id="button_kanryou4">
+            <br><br><br>
+            <button id="button" class="kanryou4" onclick="location.href='5.html'">予約一覧</button>
+            </div>
         </div>
+
+
+
 
       </main>
 
