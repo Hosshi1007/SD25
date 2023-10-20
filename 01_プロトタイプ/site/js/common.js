@@ -40,6 +40,19 @@ function staff_click(num){
   //詳細ページに移動
   window.location.href = '91.html';
 }
+function html100_click(num){
+  //これは僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお///////♥♥♥♥
+  let elements = document.getElementsByClassName("findID");
+  //メニュー名などの格納
+  let id = elements.item(0).rows[num].cells[0].firstChild.data;
+  let id2 = elements.item(0).rows[num].cells[1].firstChild.data;
+  let id3 = elements.item(0).rows[num].cells[2].firstChild.data;
+  alert("名称：" + id + "\n分類：" + id2 + "\n価格：" + id3 + "円");
+    //これは僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお///////♥♥♥♥
+
+  //詳細ページに移動
+  window.location.href = '101.html';
+}
 (() => {
   //HTMLのid値を使って以下のDOM要素を取得
   const downbutton = document.getElementById('down');
