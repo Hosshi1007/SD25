@@ -27,6 +27,19 @@ function appoint_click(num){
   window.location.href = '6.html';
   //これは僕ちんの術式だにょ～～～～～～～～～NNNN（工藤）
 }
+function staff_click(num){
+  //これは僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお///////♥♥♥♥
+  let elements = document.getElementsByClassName("findID");
+  //会員ID格納
+  let id = elements.item(0).rows[num].cells[0].firstChild.data;
+  let id2 = elements.item(0).rows[num].cells[1].firstChild.data + "　" + elements.item(0).rows[num].cells[2].firstChild.data;
+  let id3 = elements.item(0).rows[num].cells[3].firstChild.data;
+  alert("従業員ID：" + id + "\n従業員名：" + id2 + "\n雇用形態：" + id3);
+    //これは僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお///////♥♥♥♥
+
+  //詳細ページに移動
+  window.location.href = '91.html';
+}
 (() => {
   //HTMLのid値を使って以下のDOM要素を取得
   const downbutton = document.getElementById('down');
