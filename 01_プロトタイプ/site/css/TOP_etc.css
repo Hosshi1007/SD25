@@ -15,6 +15,14 @@ html,body{
   background-color: #ffd700;
 }
 
+.btn_big2{
+  width: 45%;
+  height: 75%;
+  border-radius: 25px;
+  font-size: 28px;
+  background-color: #ffd700;
+}
+
 
 main#main_TOPetc{
   width: 100%;
