@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>121.在庫情報 更新</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/waku.css">
+    <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
+    <script type="text/javascript" src="common.js"></script>
+
+  </head>
+
+
+  <body>
+
+    <div id="wrap">
+      <header>
+        <div id="icon">
+          <a href="126.html">
+            <img src="images/S.I.N.G.S.png">
+            <p>店長用 from S.I.N.G.S</p>
+          </a>
+        </div>
+        <div id="h1">
+          <div id="textbox">
+            在庫情報 更新
+          </div>
+        </div>
+      </header>
+
+
+      <nav id="gloval-nav">
+        <div class="nav_textbox">
+          <a href="107.html">在庫TOP</a>
+        </div>
+        <div class="nav_textbox">
+          <a href="#"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="#"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="#"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="#"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="#"></a>
+        </div>
+      </nav>
+
+
+      <main>
+        <div id="h2">
+          <div id="textbox2">
+           全ての項目に入力して「次へ」を押してください。
+          </div>
+        </div>
+
+
+        <div id="gamen_nyuuryoku">
+          <div class="errmsg_h1"></div>
+          <form id="form_nyuuryoku" method="post" action="#">
+            <label class="input_label">
+              <div class="input_left">名称：</div>
+              <div><input type="text" name="stock_name" maxlength="20" placeholder="例)たこやき" required></div>
+            </label>
+            <div class="errmsg"></div>
+            <label class="input_label">
+              <div class="input_left">仕入れ先企業名：</div>
+              <div><input type="text" name="company_name" maxlength="20" placeholder="例)まさる堂株式会社" required></div>
+            </label>
+            <div class="errmsg"></div>
+            <label class="input_label">
+              <div class="input_left">発注時送信先メールアドレス：</div>
+              <div><input type="text" name="company_mail" maxlength="20" placeholder="例)takotako@tako.tako.jp" required></div>
+            </label>
+            <div class="errmsg"></div>
+            <label class="input_label">
+              <div class="input_left">注文単位：</div>
+              <div><input type="text" name="order_num" maxlength="20" placeholder="100" required></div>
+            </label>
+            <div class="errmsg"></div>
+            <label class="input_label">
+              <div class="input_left">安全在庫：</div>
+              <div><input type="text" name="stock_anzenn" maxlength="20" placeholder="30" required> </div>
+            </label>
+            <div class="errmsg"></div>
+          </form>
+          <button onclick="location.href='121_e.html'">エラー</button>
+          <button id="button" onclick="location.href='122.html'">次へ</button>
+        </div>
+
+
+
+      </main>
+
+
+    </div>
+
+  </body>
+
+</html>
