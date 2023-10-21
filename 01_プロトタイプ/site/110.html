@@ -8,13 +8,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <title>3.html</title>
+    <title>110.発注情報一覧 閲覧/検索</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
     <link rel="stylesheet" type="text/css" href="css/table.css">
-    <link rel="stylesheet" type="text/css" href="css/table2.css">
+    <link rel="stylesheet" type="text/css" href="css/kaiin.css">
     <script type="text/javascript" src="js/common.js"></script>
 
   </head>
@@ -25,14 +25,14 @@
     <div id="wrap">
       <header>
         <div id="icon">
-          <a href="dummy.html">
+          <a href="126.html">
             <img src="images/S.I.N.G.S.png">
-            <p>従業員用 from S.I.N.G.S</p>
+            <p>店長用 from S.I.N.G.S</p>
           </a>
         </div>
         <div id="h1">
           <div id="textbox">
-            いんでっくすHTML
+            発注情報一覧 閲覧/検索
           </div>
         </div>
       </header>
@@ -40,22 +40,22 @@
 
       <nav id="gloval-nav">
         <div class="nav_textbox">
-          <a href="table1.html">table1</a>
+          <a href="107.html">在庫TOP</a>
         </div>
         <div class="nav_textbox">
-          <a href="table2.html">table2</a>
+          <a href="dummy.html"></a>
         </div>
         <div class="nav_textbox">
-          <a href="dummy.html">nav3</a>
+          <a href="dummy.html"></a>
         </div>
         <div class="nav_textbox">
-          <a href="dummy.html">nav4</a>
+          <a href="dummy.html"></a>
         </div>
         <div class="nav_textbox">
-          <a href="dummy.html">nav5</a>
+          <a href="dummy.html"></a>
         </div>
         <div class="nav_textbox">
-          <a href="dummy.html">nav6</a>
+          <a href="dummy.html"></a>
         </div>
       </nav>
 
@@ -63,138 +63,83 @@
       <main>
         <div id="h2">
           <div id="textbox2">
-            基本構成見本画面です<br>
-            だいたいこんなかんじですか？
+            条件を入力して会員を検索できます。表をクリックすると詳細画面へ遷移します。<br>
+            <div id="html5" class="date">
+              発注ID:<input type="text">　発注日:<input type="date">　名称:<input type="text">
+              <button id="button" class="html5" onclick="location.href='110.html'">検索</button>
+            </div>
           </div>
         </div>
 
 
         <div id="gamen">
-          <form id="form" method="post" action="dummy.html">
-            <label class="input_label">
-              <div class="input_left">姓：</div>
-              <input type="text" name="sei" maxlength="10" placeholder="姓" required>
-            </label>
-            <label>
-              <div class="input_left">名：</div>
-              <input type="text" name="sei" maxlength="10" placeholder="名" required>
-            </label>
-            <label>
-              <div class="input_left">セイ：</div>
-              <input type="text" name="sei" maxlength="10" placeholder="セイ" required>
-            </label>
-            <label>
-              <div class="input_left">メイ：</div>
-              <input type="text" name="sei" maxlength="10" placeholder="メイ" required>
-            </label>
-            <button id="button" type="submit">登録</button>
-          </form>
+          <div id="html5" class="html5">検索条件
+          <select>
+            <option>全て</option>
+          </select>
+          </div>
 
-          <div class="table">
-              <table class="findID">
-                <tr>
-                  <th>会員ID</th>
-                  <th>姓</th>
-                  <th>名</th>
-                  <th>セイ</th>
-                  <th>メイ</th>
-                  <th>職業</th>
-                  <th>住所</th>
-                  <th>メールアドレス</th>
-                </tr>
-                <tr onclick="tr_click(1);" class="hover">
-                  <td>00001</td>
-                  <td>武</td>
-                  <td>豊</td>
-                  <td>タケ</td>
-                  <td>ユタカ</td>
-                  <td>学生</td>
-                  <td>HAL名古屋</td>
-                  <td>exsample@@@exsample.</td>
-                </tr>
-                <tr onclick="tr_click(2);" class="hover">
-                  <td>00002</td>
-                  <td>纐纈</td>
-                  <td>人間</td>
-                  <td>コウケツ</td>
-                  <td>ヒューマン</td>
-                  <td>学生</td>
-                  <td>火星</td>
-                  <td>exsample@@</td>
-                </tr>
-                <tr onclick="tr_click(3);" class="hover">
-                  <td>00003</td>
-                  <td>工藤</td>
-                  <td>進一</td>
-                  <td>クドウ</td>
-                  <td>シンイチ</td>
-                  <td>探偵</td>
-                  <td>ベイカー街</td>
-                  <td>exsample@@</td>
-                </tr>
-                <tr onclick="tr_click(4);" class="hover">
-                  <td>00004</td>
-                  <td>林</td>
-                  <td>米</td>
-                  <td>ハヤシ</td>
-                  <td>ライス</td>
-                  <td>養分</td>
-                  <td>飲食店</td>
-                  <td>exsample@@</td>
-                </tr>
-                <tr onclick="tr_click(5);" class="hover">
-                  <td>00005</td>
-                  <td>川原</td>
-                  <td>成雄弓</td>
-                  <td>カワハラ</td>
-                  <td>ナオユミ</td>
-                  <td>武器</td>
-                  <td>関ケ原</td>
-                  <td>exsample@@</td>
-                </tr>
-              </table>
-            </div>
 
-            <br><br><br>
-
-            <div id="table2">
-              <table>
-                <tr>
-                  <th>会員ID</th>
-                  <td>00001</td>
-                </tr>
-                <tr>
-                  <th>姓</th>
-                  <td>武</td>
-                </tr>
-                <tr>
-                  <th>名</th>
-                  <td>ユタカ</td>
-                </tr>
-                <tr>
-                  <th>セイ</th>
-                  <td>タケ</td>
-                </tr>
-                <tr>
-                  <th>メイ</th>
-                  <td>ユタカ</td>
-                </tr>
-                <tr>
-                  <th>職業</th>
-                  <td>学生</td>
-                </tr>
-                <tr>
-                  <th>住所</th>
-                  <td>愛知県名古屋市中村区名駅４丁目２７−１ 総合校舎スパイラルタワーズ</td>
-                </tr>
-                <tr>
-                  <th>メールアドレス</th>
-                  <td>example@example.sa.ac.jp</td>
-                </tr>
-              </table>
-            </div>
-            
-
+          <div id="html5" class="table table_110">
+            <table class="findID">
+              <tr>
+                <th>発注ID</th>
+                <th>発注日</th>
+                <th>納入予定日</th>
+                <th>名称</th>
+                <th>注文数</th>
+                <th>ステータス</th>
+              </tr>
+              <tr onclick="appoint_click(1);" class="hover">
+                <td>00001</td>
+                <td>2023年9月22日</td>
+                <td>2023年9月28日</td>
+                <td>フライドポテト</td>
+                <td>500</td>
+                <td>入荷済み</td>
+              </tr>
+              <tr onclick="appoint_click(2);" class="hover">
+                <td>00002</td>
+                <td>2023年9月22日</td>
+                <td>2023年9月28日</td>
+                <td>フライドポテト</td>
+                <td>500</td>
+                <td>入荷済み</td>
+              </tr>
+              <tr onclick="appoint_click(3);" class="hover">
+                <td>00003</td>
+                <td>2023年9月22日</td>
+                <td>2023年9月28日</td>
+                <td>フライドポテト</td>
+                <td>500</td>
+                <td>入荷済み</td>
+              </tr>
+              <tr onclick="appoint_click(4);" class="hover">
+                <td>00004</td>
+                <td>2023年9月22日</td>
+                <td>2023年9月28日</td>
+                <td>フライドポテト</td>
+                <td>500</td>
+                <td>入荷済み</td>
+              </tr>
+              <tr onclick="appoint_click(5);" class="hover">
+                <td>00005</td>
+                <td>2023年9月22日</td>
+                <td>2023年9月28日</td>
+                <td>フライドポテト</td>
+                <td>500</td>
+                <td>入荷済み</td>
+              </tr>
+              <tr onclick="appoint_click(6);" class="hover">
+                <td>00006</td>
+                <td>2023年9月22日</td>
+                <td>2023年9月28日</td>
+                <td>フライドポテト</td>
+                <td>500</td>
+                <td>入荷済み</td>
+              </tr>
+            </table>
+          </div>
 
         </div>
 
