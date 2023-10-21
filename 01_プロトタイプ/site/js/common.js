@@ -17,6 +17,7 @@ function menu_click(hoge){
   //詳細ページに移動
   window.location.href = url_go;
 }
+
 function appoint_click(num){
   //これは僕ちんの術式だにょ～～～～～～～～～NNNN（工藤）
   let elements = document.getElementsByClassName("findID");
@@ -27,6 +28,7 @@ function appoint_click(num){
   window.location.href = '6.html';
   //これは僕ちんの術式だにょ～～～～～～～～～NNNN（工藤）
 }
+
 function staff_click(num){
   //これは僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお///////♥♥♥♥
   let elements = document.getElementsByClassName("findID");
@@ -40,6 +42,7 @@ function staff_click(num){
   //詳細ページに移動
   window.location.href = '91.html';
 }
+
 function html100_click(num){
   //これは僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお///////♥♥♥♥
   let elements = document.getElementsByClassName("findID");
@@ -53,6 +56,18 @@ function html100_click(num){
   //詳細ページに移動
   window.location.href = '101.html';
 }
+
+function order_click(num){
+  //んんｗｗｗｗｗこれは私のｗｗｗ術式ｗｗｗﾌｫｶﾇﾎﾟｳｗｗｗ(武)
+  let elements = document.getElementsByClassName("findID");
+  //会員ID格納
+  let id = elements.item(0).rows[num].cells[0].firstChild.data;
+  //詳細ページに移動
+  window.location.href = '109.html';
+  //んんｗｗｗｗｗこれは私のｗｗｗ術式ｗｗｗﾌｫｶﾇﾎﾟｳｗｗｗ(武)
+}
+
+
 (() => {
   //HTMLのid値を使って以下のDOM要素を取得
   const downbutton = document.getElementById('down');
@@ -79,3 +94,4 @@ function html100_click(num){
   })
 
 })();
+
