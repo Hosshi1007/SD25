@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/*
+シフト一覧
+80.html
+*/
+
+div#itirann{
+    text-align: center;
+}
+
+div#itirann button{
+    font-size: 24px;
+    background-color: #4169e1;
+    color:#fff;
+}
+
+div#itirann button#yazi{
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+div#itirann button#caldate{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px 330px;
+    border-radius: 10px;
+}
+
+
+div#itirann table{
+    margin: 0 auto;
+}
+
+/*共通部分*/
+div#itirann table tr td{
+    padding: 5px 20px;
+    text-align: center;
+    border: solid 3.5px #15202b;
+    border-radius: 10px;
+    color: #fff;
+}
+
+div#itirann table tr td a{
+    text-decoration: none;
+    color: #000;
+}
+
+div#itirann table tr td#date{
+    background-color: #4169e1;
+}
+
+div#itirann table tr td#otherday{
+    background-color: #f00;
+}
+
+div#itirann table tr td#othermonth{
+    background-color: #777;
+}
+
+div#itirann table tr td#day{
+    padding: 20px 20px;
+    color: #000;
+    background-color: #fff;
+}

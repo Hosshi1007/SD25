@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <title>72.html</title>
+    <title>85_2.html</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
@@ -16,8 +16,8 @@
     <link rel="stylesheet" type="text/css" href="css/table.css">
     <link rel="stylesheet" type="text/css" href="css/table2.css">
 
-    <link rel="stylesheet" type="text/css" href="css/bunseki_kekka.css">
-    <link rel="stylesheet" type="text/css" href="bunseki_kekka.css">
+    <link rel="stylesheet" type="text/css" href="css/Shift_Details&Confirmation_Screen.css">
+    <link rel="stylesheet" type="text/css" href="Shift_Details&Confirmation_Screen.css">
 
     <script type="text/javascript" src="js/common.js"></script>
 
@@ -38,7 +38,7 @@
 
         <div id="h1">
           <div id="textbox">
-            顧客分析結果
+            シフト削除確認
           </div>
         </div>
 
@@ -47,7 +47,7 @@
 
       <nav id="gloval-nav">
         <div class="nav_textbox">
-          <a href="#">分析TOP</a>
+          <a href="137.html">受付TOP</a>
         </div>
         <div class="nav_textbox">
           <a href="#"></a>
@@ -56,13 +56,13 @@
           <a href="#"></a>
         </div>
         <div class="nav_textbox">
-          <a href="#">店長メイン<br>メニュー</a>
+          <a href="81.html">詳細に戻る</a>
         </div>
         <div class="nav_textbox">
           <a href="#"></a>
         </div>
         <div class="nav_textbox">
-          <a href="#">検索条件<br>変更</a>
+          <a href="#"></a>
         </div>
       </nav>
 
@@ -70,31 +70,52 @@
       <main>
 
         <div id="h2">
-          <div id="textbox2" style="text-align: left;">
-            入力された条件での分析結果は以下の通りです。
+          <div id="textbox2">
+            削除内容を確認して、よろしければ「承認」ボタンを押してください。
           </div>
         </div>
 
 
         <div id="gamen">
-          <table class="back-ground">
+          <table>
             <tr>
-              <td>分析結果</td>
-              <td>直近1か月</td>
+              <th>会員ID</th>
+              <td>00001</td>
             </tr>
             <tr>
-              <td>職業：会社員</td>
-              <td class="number">10</td>
+              <th>姓</th>
+              <td>纐纈</td>
             </tr>
             <tr>
-              <td>年齢：20代</td>
-              <td class="number">80</td>
+              <th>名</th>
+              <td>彪真</td>
             </tr>
             <tr>
-              <td>性別：男性</td>
-              <td class="number">40</td>
+              <th>セイ</th>
+              <td>コウケツ</td>
+            </tr>
+            <tr>
+              <th>メイ</th>
+              <td>ヒュウマ</td>
+            </tr>
+            <tr>
+              <th>業務開始時刻</th>
+              <td>15:00</td>
+            </tr>
+            <tr>
+              <th>業務終了時刻</th>
+              <td>22:00</td>
+            </tr>
+            <tr>
+              <th>登録日</th>
+              <td>2023/09/26</td>
             </tr>
           </table>
+          <div id="mozi">
+            以下の内容を確定します<br>
+            よろしいですか？
+          </div>
+          <button id="button"><a href="85.html" style="text-decoration: none; color: #fff;">変更</a></button>
         </div>
       </main>
     </div>

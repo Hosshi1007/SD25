@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*
+シフト・従業員詳細
+81.html 91.html
+*/
+
+/*
+確認画面　確認内容
+78.html 83.html 85.html 88.html 93.html 95.html
+*/
+
+table{
+    margin: 20px 50px;
+}
+
+table tr{
+    border: solid 1px #fff;
+}
+
+table tr th{
+    padding: 10px 10px 10px 100px;
+
+    text-align: right;
+    font-size: 24px;
+    background-color: #4169e1;
+    color: #fff;
+}
+
+table tr td{
+    padding: 10px 700px 10px 50px;
+
+    text-align: left;
+    font-size: 24px;
+    background-color: rgb(200, 200, 200);
+    color: #000;
+}
+
+table#hosshi tr td{
+    padding: 10px 300px 10px 50px;
+
+    text-align: left;
+    font-size: 24px;
+    background-color: rgb(200, 200, 200);
+    color: #000;
+}
+
+div#mozi{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+div#yes{
+    justify-content: center;
+}
+
+a.btn_50 {
+    display: block;
+    text-align: center;
+    /* vertical-align: middle; */
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    border-radius: 1rem;
+    border-bottom: 10px solid #C00000;
+    background: #FF0000;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+a.btn_50:hover {
+    margin-top: 6px;
+    border-bottom: 1px solid #FF0000;
+    color: #fff;
+}
