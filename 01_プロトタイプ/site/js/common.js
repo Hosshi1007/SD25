@@ -67,6 +67,15 @@ function order_click(num){
   //んんｗｗｗｗｗこれは私のｗｗｗ術式ｗｗｗﾌｫｶﾇﾎﾟｳｗｗｗ(武)
 }
 
+function hattyuu_click(num){
+  //んんｗｗｗｗｗこれは私のｗｗｗ術式ｗｗｗﾌｫｶﾇﾎﾟｳｗｗｗ(武)
+  let elements = document.getElementsByClassName("findID");
+  //会員ID格納
+  let id = elements.item(0).rows[num].cells[0].firstChild.data;
+  //詳細ページに移動
+  window.location.href = '111.html';
+  //んんｗｗｗｗｗこれは私のｗｗｗ術式ｗｗｗﾌｫｶﾇﾎﾟｳｗｗｗ(武)
+}
 
 (() => {
   //HTMLのid値を使って以下のDOM要素を取得
