@@ -18,44 +18,84 @@ function menu_click(hoge){
   window.location.href = url_go;
 }
 
-function appoint_click(num){
-  //これは僕ちんの術式だにょ～～～～～～～～～NNNN（工藤）
-  let elements = document.getElementsByClassName("findID");
-  //会員ID格納
-  let id = elements.item(0).rows[num].cells[0].firstChild.data;
-  //alert(id);
-  //詳細ページに移動
-  window.location.href = '6.html';
-  //これは僕ちんの術式だにょ～～～～～～～～～NNNN（工藤）
-}
-
-function staff_click(num){
-  //これは僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお///////♥♥♥♥
-  let elements = document.getElementsByClassName("findID");
-  //会員ID格納
-  let id = elements.item(0).rows[num].cells[0].firstChild.data;
-  let id2 = elements.item(0).rows[num].cells[1].firstChild.data + "　" + elements.item(0).rows[num].cells[2].firstChild.data;
-  let id3 = elements.item(0).rows[num].cells[3].firstChild.data;
-  alert("従業員ID：" + id + "\n従業員名：" + id2 + "\n雇用形態：" + id3);
-    //これは僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお///////♥♥♥♥
-
-  //詳細ページに移動
-  window.location.href = '91.html';
-}
-
-function html100_click(num){
-  //これは僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお///////♥♥♥♥
-  let elements = document.getElementsByClassName("findID");
-  //メニュー名などの格納
-  let id = elements.item(0).rows[num].cells[0].firstChild.data;
-  let id2 = elements.item(0).rows[num].cells[1].firstChild.data;
-  let id3 = elements.item(0).rows[num].cells[2].firstChild.data;
-  alert("名称：" + id + "\n分類：" + id2 + "\n価格：" + id3 + "円");
-    //これは僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお///////♥♥♥♥
-
-  //詳細ページに移動
-  window.location.href = '101.html';
-}
+  //こっから僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお
+  function staff_click(num){
+    let elements = document.getElementsByClassName("findID");
+    //従業員名などの格納
+    let id = elements.item(0).rows[num].cells[0].firstChild.data;
+    let id2 = elements.item(0).rows[num].cells[1].firstChild.data + "　" + elements.item(0).rows[num].cells[2].firstChild.data;
+    let id3 = elements.item(0).rows[num].cells[3].firstChild.data;
+    alert("従業員ID：" + id + "\n従業員名：" + id2 + "\n雇用形態：" + id3);
+  
+    //詳細ページに移動
+    window.location.href = '91.html';
+  }
+  function html100_click(num){
+  
+    let elements = document.getElementsByClassName("findID");
+    //メニュー名などの格納
+    let id = elements.item(0).rows[num].cells[0].firstChild.data;
+    let id2 = elements.item(0).rows[num].cells[1].firstChild.data;
+    let id3 = elements.item(0).rows[num].cells[2].firstChild.data;
+    alert("名称：" + id + "\n分類：" + id2 + "\n価格：" + id3 + "円");
+  
+    //詳細ページに移動
+    window.location.href = '101.html';
+  }
+  function html38_click(num){
+    //従業員名などの格納
+    let id = elements.item(0).rows[num].cells[0].firstChild.data;
+    let id2 = elements.item(0).rows[num].cells[1].firstChild.data + "　" + elements.item(0).rows[num].cells[2].firstChild.data;
+    let id3 = elements.item(0).rows[num].cells[5].firstChild.data;
+    alert("会員ID：" + id + "\n名前：" + id2 + "\n性別：" + id3);
+    //詳細ページに移動
+    window.location.href = '39.html';
+  }
+  let count = 0;
+  function error_button() {
+    count++
+    var let1 = document.getElementById("error_button") != null;
+    var let2 = document.getElementById("error_button3")  != null; 
+    var let3 = document.getElementById("error_button1") != null;
+    var let4 = document.getElementById("error_button2") != null;
+    if(let1 == true){
+      var obj = document.getElementById("error_button");
+      if(count % 2 == 0){
+        obj.style.borderWidth = "0px";
+      }
+      else{
+        obj.style.border = "solid 5px red";
+      }
+    }
+    if(let2 == true){
+    var obj1 = document.getElementById("error_button3");
+    if(count % 2 == 0){
+      obj1.style.borderWidth = "0px";
+    }
+    else{
+      obj1.style.border = "solid 5px red";
+    }
+    }
+    if(let3 == true){
+    var target1 = document.getElementById("error_button1");
+    if(count % 2 == 0){
+      target1.innerHTML = "";
+    }
+    else{
+      target1.innerHTML = "※入力エラーがあります。メッセージを確認して再入力してください";
+    }
+    }
+    if(let4 == true){
+    var target2 = document.getElementById("error_button2");
+    if(count % 2 == 0){
+      target2.innerHTML = "";
+    }
+    else{
+      target2.innerHTML = "※必ず入力してください";
+    }
+    }
+  }
+  //ここまで僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお
 
 function order_click(num){
   //んんｗｗｗｗｗこれは私のｗｗｗ術式ｗｗｗﾌｫｶﾇﾎﾟｳｗｗｗ(武)
