@@ -8,12 +8,45 @@
 
     <meta name="viewport" content="width=device-width">
 
-    <title>枠原本</title>
+    <title>2.html</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <script type="text/javascript" src="common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/kaiin.css">
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <style>
+        select{
+          width:90px;
+          font-size: initial;
+        }
+        div#h2.html62,div#h2.html19{
+         margin-bottom:50px;
+        }
+        form#form.html19{
+         padding:20px 0 0 0;
+        }
+        form#form.html19 p#error_button2{
+        font-size: 1.3rem;
+        margin-left:325px;
+        }
+        p#error_button1{
+        text-align: center;
+        font-weight: bold;
+        text-shadow: black 2px 3px;
+        color:red;
+        font-size: 1.5rem;
+      }
+      p#error_button2{
+        position:fixed;
+        font-weight: bold;
+        text-shadow: black 2px 3px;
+        color:red;
+        font-size: 1.5rem;
+        margin-left: 470px;
+      }
+    </style>
 
   </head>
 
@@ -25,12 +58,12 @@
         <div id="icon">
           <a href="index.html">
             <img src="images/S.I.N.G.S.png">
-            <p>従業員用 from S.I.N.G.S</p>
+            <p>会員用 from S.I.N.G.S</p>
           </a>
         </div>
         <div id="h1">
           <div id="textbox">
-            予約登録入力
+            予約変更入力
           </div>
         </div>
       </header>
@@ -53,30 +86,28 @@
           <a href="dummy.html"></a>
         </div>
         <div class="nav_textbox">
-          <a href="dummy.html">詳細に戻る</a>
+          <a href="">詳細に戻る</a>
         </div>
       </nav>
 
 
       <main>
-        <div id="h2">
+        <div id="h2" class="html19">
           <div id="textbox2">
            全ての項目に入力して「次へ」を押してください。
           </div>
         </div>
 
+        <p id="error_button1"></p>
 
         <div id="gamen">
-          <form id="form" method="post" action="dummy.html">
+          <form id="form" method="post" class="html19" action="dummy.html">
             <label class="input_label">
               <div class="input_left">予約日時：</div>
-              <input type="date" name="time" maxlength="10" placeholder="姓" required>
+              <input type="date" name="time" maxlength="10" placeholder="姓" id="error_button" required>
+              <p id="error_button2"></p>
             </label>
-            <style>
-              #form input{
-                width:initial;
-              }
-            </style>
+
             <label>
               <div class="input_left" id="yoyaku_time">予約時間：</div>
               <select name="yoyaku_hour">
@@ -131,7 +162,10 @@
                 <option>5人</option>
                 <option>6人</option>
               </select>
+              </label>
             </form>
+
+            <input type="button" value="エラー／表示切り替え" onclick="error_button();">
 
             <button id="button" onclick="location.href='3.html'">次へ</button>
 
