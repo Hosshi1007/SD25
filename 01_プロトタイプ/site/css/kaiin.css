@@ -351,6 +351,23 @@ div#html62{
   width:
   initial;
 }
+<<<<<<< HEAD
+label#html62{
+  display: flex;
+ }
+ div#h2.html62,div#h2.html19{
+  margin-bottom:50px;
+ }
+ form#form.html19{
+  padding:20px 0 0 0;
+ }
+ form#form.html19 p#error_button2{
+  font-size: 1.3rem;
+  margin-left:530px;
+ }
+select{
+  text-align: center;
+=======
 label#html62{
   display: flex;
  }
@@ -359,6 +376,7 @@ label#html62{
  }
 select{
   text-align: center;
+>>>>>>> 45a72f19fe8d537fb5dc0ec0b5d3d324413512bb
   font-size: 30px;
   width:120px;
  }
