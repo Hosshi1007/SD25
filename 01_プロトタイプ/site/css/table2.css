@@ -32,3 +32,9 @@
 .table_syousai{
   width: 1100px;
 }
+
+.kakunin_delete{
+  color: red;
+  font-size: 24px;
+  text-align: center;
+}
