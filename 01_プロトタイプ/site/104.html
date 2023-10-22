@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>104.メニュー情報 変更</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/waku.css">
+    <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
+    <script type="text/javascript" src="common.js"></script>
+
+  </head>
+
+
+  <body>
+
+    <div id="wrap">
+      <header>
+        <div id="icon">
+          <a href="126.html">
+            <img src="images/S.I.N.G.S.png">
+            <p>店長用 from S.I.N.G.S</p>
+          </a>
+        </div>
+        <div id="h1">
+          <div id="textbox">
+            メニュー情報 変更
+          </div>
+        </div>
+      </header>
+
+
+      <nav id="gloval-nav">
+        <div class="nav_textbox">
+          <a href="107.html">在庫TOP</a>
+        </div>
+        <div class="nav_textbox">
+          <a href="#"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="#"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="#"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="#"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="101.html">詳細に戻る</a>
+        </div>
+      </nav>
+
+
+      <main>
+        <div id="h2">
+          <div id="textbox2">
+           全ての項目に入力して「次へ」を押してください。
+          </div>
+        </div>
+
+
+        <div id="gamen_nyuuryoku">
+          <div class="errmsg_h1"></div>
+          <form id="form_nyuuryoku" method="post" action="#">
+            <label class="input_label">
+              <div class="input_left">名称：</div>
+              <div><input type="text" name="stock_name" maxlength="20" placeholder="たこやき" required></div>
+            </label>
+            <div class="errmsg"></div>
+            <label class="input_label">
+              <div class="input_left">価格(税抜き)：</div>
+              <div><input type="text" name="company_name" maxlength="20" placeholder="350" required></div>
+            </label>
+            <div class="errmsg"></div>
+            <label class="input_label">
+              <div class="input_left">販売開始日：</div>
+              <div><input type="date" name="company_mail" maxlength="20" placeholder="2023/11/30" required></div>
+            </label>
+            <div class="errmsg"></div>
+            <label class="input_label">
+              <div class="input_left">販売終了日：</div>
+              <div><input type="date" name="order_num" maxlength="20" placeholder="2024/03/31" required></div>
+            </label>
+            <div class="errmsg"></div>
+            <label class="input_label">
+              <div class="input_left">ジャンル：</div>
+              <div>
+                <select>
+                  <option>フード</option>
+                  <option>ドリンク</option>
+                  <option>アルコール</option>
+                </select>
+              </div>
+            </label>
+            <div class="errmsg"></div>
+          </form>
+          <button onclick="location.href='104_e.html'">エラー</button>
+          <button id="button" onclick="location.href='105.html'">次へ</button>
+        </div>
+
+
+
+      </main>
+
+
+    </div>
+
+  </body>
+
+</html>
