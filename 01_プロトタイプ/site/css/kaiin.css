@@ -1,3 +1,62 @@
+div#itirann{
+  text-align: center;
+}
+
+div#itirann button{
+  font-size: 24px;
+  background-color: #4169e1;
+  color:#fff;
+}
+
+div#itirann button#yazi{
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+
+div#itirann button#caldate{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px 330px;
+  border-radius: 10px;
+}
+
+
+div#itirann table{
+  margin: 0 auto;
+}
+
+/*共通部分*/
+div#itirann table tr td{
+  padding: 5px 20px;
+  text-align: center;
+  border: solid 3.5px #15202b;
+  border-radius: 10px;
+  color: #fff;
+}
+
+div#itirann table tr td a{
+  text-decoration: none;
+  color: #000;
+}
+
+div#itirann table tr td#date{
+  background-color: #4169e1;
+}
+
+div#itirann table tr td#otherday{
+  background-color: #f00;
+}
+
+div#itirann table tr td#othermonth{
+  background-color: #777;
+}
+
+div#itirann table tr td#day{
+  padding: 2% 20px;
+  color: #000;
+  background-color: #fff;
+}
+
 #gamen{
   width:100%;
   height:100%;
@@ -19,11 +78,15 @@
   width: 200px;               /* 幅指定 */
   text-align:  center;        /* 文字中央揃え */
 }
+table.findID{
+  width:100%;
+}
 #form.kakunin3{
   padding:50px 50px 0 0;
 }
 #kakunin3{
   padding:50px;
+  font-size: 1.7rem;
   color:white;
 }
 #kakunin4{
@@ -44,9 +107,21 @@
   font-size:2rem;
   margin:200px 0 0 0;
 }
+div#kanryou{
+  display: flex;
+  justify-content: space-around;
+  width:50%;
+  margin-top: 3%;
+  color:white;
+  font-size: 2.5rem;
+}
+div#kanryou p#kanryou{
+  padding:5px 65px 5px 65px;
+  border: 2px solid white;
+}
 #button.kanryou4{
   position:initial;
-  margin:0 20px 0 0;
+  margin:20px 20px 0 0;
 }
 html,body{
   overflow: hidden;
@@ -154,6 +229,17 @@ div#html12.table tr td{
   border-left:3px solid rgb(199,214,236);
   border-bottom:3px solid rgb(199,214,236);
   background-color: rgb(243 245 245);
+  height:60px;
+  text-align:center;
+  position:relative;
+}
+div#html12.table tr td p{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:100%;
+  font-weight: 900;
 }
 div#html12.table tr td#last_childhtml12{
   border-bottom:0px solid rgb(0,0,0);
@@ -261,12 +347,68 @@ div#html61.table tr:nth-child(odd) td{
   background-color:rgb(232 235 244);
 }
 div#html62{
-width:initial;
-}
-.box select{
-  border: 1px solid;
   font-size: 30px;
- }
-table.findID{
-  width:100%;
+  width:
+  initial;
 }
+label#html62{
+  display: flex;
+ }
+ div#h2.html62{
+  margin-bottom:50px;
+ }
+select{
+  text-align: center;
+  font-size: 30px;
+  width:120px;
+ }
+ p#error_button1{
+  text-align: center;
+  font-weight: bold;
+  text-shadow: black 2px 3px;
+  color:red;
+  font-size: 1.5rem;
+ }
+ p#error_button2{
+  position:fixed;
+  font-weight: bold;
+  text-shadow: black 2px 3px;
+  color:red;
+  font-size: 1.5rem;
+  margin-left: 470px;
+ }
+ select#error_button.html65{
+  text-align: left;
+  width:340px;
+ }
+ div#html61 table#html61 tr th:nth-child(1){
+  text-align: left;
+ }
+ div#html61 table#html61 tr th:nth-child(2){
+  text-align: left;
+  width: 10%;
+ }
+ div#html61 table#html61 tr th:nth-child(3){
+  text-align: left;
+  width: 20%;
+ }
+ div#html61 table#html61 tr td#small_sum{
+  font-weight: bold;
+  text-align: right;
+ }
+ div#html61 table#html61 tr td#all_sum{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+ }
+ div#html61 table#html61 tr td:last-child#all_sum{
+  text-align: left;
+ }
+ div#html61 table#html61 tr td:last-child#small_sum{
+  text-align: left;
+ }
+ div#html61 table#html61 tr:last-child td#all_sum{
+  padding:10px 5px;
+  background-color: rgb(243 176 133);
+ }
+ 
