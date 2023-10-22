@@ -66,6 +66,10 @@ main#main_TOPetc h1{
   background-color: #15202b;
 }
 
+.bg_gold{
+  background-color: #ffd700;
+}
+
 #icon_top{
   position: absolute;
   top: 30px;
