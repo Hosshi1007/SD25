@@ -17,7 +17,18 @@ function menu_click(hoge){
   //詳細ページに移動
   window.location.href = url_go;
 }
-  //こっから僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお
+    //こっから僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお
+    function appoint_click(num){
+      let elements = document.getElementsByClassName("findID");
+      //従業員名などの格納
+      let id = elements.item(0).rows[num].cells[0].firstChild.data;
+      let id2 = elements.item(0).rows[num].cells[1].firstChild.data + "　" + elements.item(0).rows[num].cells[2].firstChild.data;
+      let id3 = elements.item(0).rows[num].cells[3].firstChild.data;
+      alert("予約ID：" + id + "\n予約日：" + id2 + "\n予約人数：" + id3);
+    
+      //詳細ページに移動
+      window.location.href = '6.html';
+    }
   function staff_click(num){
     let elements = document.getElementsByClassName("findID");
     //従業員名などの格納
