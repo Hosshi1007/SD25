@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
     <link rel="stylesheet" type="text/css" href="css/kaiin.css">
-    <script type="text/javascript" src="common.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 
   </head>
 
@@ -24,14 +24,14 @@
     <div id="wrap">
       <header>
         <div id="icon">
-          <a href="index.html">
+          <a href="127.html">
             <img src="images/S.I.N.G.S.png">
-            <p>従業員用 from S.I.N.G.S</p>
+            <p>店長用 from S.I.N.G.S</p>
           </a>
         </div>
         <div id="h1">
           <div id="textbox">
-            社員・バイト登録入力
+            会員情報変更入力
           </div>
         </div>
       </header>
@@ -39,7 +39,7 @@
 
       <nav id="gloval-nav">
         <div class="nav_textbox">
-          <a href="126.html">店長TOP</a>
+          <a href="127.html">店長用TOP</a>
         </div>
         <div class="nav_textbox">
           <a href="dummy.html"></a>
@@ -48,34 +48,33 @@
           <a href="dummy.html"></a>
         </div>
         <div class="nav_textbox">
-          <a href="dummy.html"></a>
+          <a href="#.html"></a>
         </div>
         <div class="nav_textbox">
-          <a href="dummy.html"></a>
+          <a href=".html"></a>
         </div>
         <div class="nav_textbox">
-          <a href="dummy.html"></a>
+          <a href="#.html"></a>
         </div>
       </nav>
 
 
       <main>
-        <div id="h2">
+        <div id="h2" class="html19">
           <div id="textbox2">
            全ての項目に入力して「次へ」を押してください。
           </div>
         </div>
     
-        <style>
-
-        </style>
+        <p id="error_button1"></p>
 
         <div id="gamen">
-          <form id="form" method="post" action="dummy.html">
+          
+          <form id="form" class="html19" method="post" action="dummy.html">
 
             <label class="input_label" id="html14">
               <div class="input_left" id="html14">姓：</div>
-              <input type="text" placeholder="（例）HAL">
+              <input type="text" placeholder="（例）HAL" id="error_button">
             </label>
 
             <label class="input_label" id="html14">
@@ -101,7 +100,7 @@
             
             <label class="input_label" id="html14_yuubin">
               <div class="input_left" id="html14">郵便番号：</div>
-              <input type="text" placeholder="（例）450-0002"><button id="html14" onclick="location.href='8.html'">住所検索</button>
+              <input type="text" placeholder="（例）450-0002"><button id="html14" onclick="location.href='87.html'">住所検索</button>
             </label>
 
             <label class="input_label" id="html14">
@@ -110,23 +109,18 @@
             </label>
 
             <label class="input_label" id="html14">
-              <div class="input_left" id="html14">メールアドレス：</div>
-              <input type="text" placeholder="（例）example@example.com">
+              <div class="input_left" id="html14">職業：</div>
+              <input type="text" placeholder="（例）学生">
             </label>
 
             <label class="input_label" id="html14">
-              <div class="input_left" id="html14">パスワード：</div>
-              <input type="password" placeholder="（例）パスワード">
+              <div class="input_left" id="html14">メールアドレス：</div>
+              <input type="text" placeholder="（例）example@example.com">
             </label>
-
-            <label class="input_label" id="html87">
-              <div class="input_left" id="html87">パスワード再入力：</div>
-              <input type="password" placeholder="（例）パスワード再入力">
-            </label>
-
+            <p id="error_button2"></p>
         </form>
-
-            <button id="button" onclick="location.href='dummy.html'">次へ</button>
+        <input type="button" value="エラー／表示切り替え" onclick="error_button();">
+            <button id="button" onclick="location.href='88.html'">次へ</button>
 
         </div>
 
