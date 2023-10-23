@@ -9,12 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
     <title>28.html</title>
-    <link rel="stylesheet" type="text/css" href="css/wakunashi.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <link rel="stylesheet" type="text/css" href="css/table.css">
-    <link rel="stylesheet" type="text/css" href="css/table2.css">
+    <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
     <script type="text/javascript" src="js/common.js"></script>
 
   </head>
@@ -25,14 +23,14 @@
     <div id="wrap">
       <header>
         <div id="icon">
-          <a href="dummy.html">
+          <a href="22.html">
             <img src="images/S.I.N.G.S.png">
             <p>従業員用 from S.I.N.G.S</p>
           </a>
         </div>
         <div id="h1">
           <div id="textbox">
-            出勤可能日時変更入力
+            出勤可能情報 変更
           </div>
         </div>
       </header>
@@ -40,7 +38,7 @@
 
       <nav id="gloval-nav">
         <div class="nav_textbox">
-          <a href="22.html">店長TOP</a>
+          <a href="22.html">従業員TOP</a>
         </div>
         <div class="nav_textbox">
           <a href="#"></a>
@@ -55,7 +53,7 @@
           <a href="#"></a>
         </div>
         <div class="nav_textbox">
-          <a href="#"></a>
+          <a href="#" onClick="history.back();">戻る</a>
         </div>
       </nav>
 
@@ -66,43 +64,68 @@
             全ての項目に入力して「次へ」を押してください
           </div>
         </div>
-        <p style="text-align: center;"><font color="red" size="5px"><br>＊入力エラーがあります。メッセージを確認して再入力してください</font></p>
-        <div id="gamen">
-          <form id="form" method="post" action="dummy.html">
+        
+        <div id="gamen_nyuuryoku">
+          <div class="errmsg_h1">※入力エラーがあります。メッセージを確認して再入力してください。</div>
+          <form id="form_nyuuryoku" method="post" action="#">
             <label class="input_label">
-
               <div class="input_left">出勤可能日：</div>
-              <input type="date" name="" maxlength="8" class="select" required=""><font color="red">＊必ず入力してください</font>
+              <div><input type="date" name="stock_name" maxlength="8" placeholder="例)たこやき" required></div>
             </label>
-            <br><br><br>
-            <label>
+            <div class="errmsg">※必ず入力してください</div>
+            <label class="input_label">
               <div class="input_left">出勤時間：</div>
-              <select class="select" required="">
+              <div>
+                <select class="select" required="">
                   <option value="" selected="">選択してください</option>
+                  <option value="0">10:00</option>
+                  <option value="0">11:00</option>
                   <option value="0">12:00</option>
                   <option value="1">13:00</option>
                   <option value="2">14:00</option>
                   <option value="3">15:00</option>
-                </select><font color="red">＊必ず入力してください</font>
+                  <option value="0">16:00</option>
+                  <option value="0">17:00</option>
+                  <option value="0">18:00</option>
+                  <option value="0">19:00</option>
+                  <option value="0">20:00</option>
+                  <option value="0">21:00</option>
+                  <option value="0">22:00</option>
+                  <option value="0">23:00</option>
+                  <option value="0">24:00</option>
+                  <option value="0">25:00</option>
+                </select>
+              </div>
             </label>
-            <br><br><br>
-            <label>
+            <div class="errmsg"></div>
+            <label class="input_label">
               <div class="input_left">退勤時間：</div>
-              <select class="select" required="">
+              <div>
+                <select class="select" required="">
                   <option value="" selected="">選択してください</option>
+                  <option value="0">10:00</option>
+                  <option value="0">11:00</option>
                   <option value="0">12:00</option>
                   <option value="1">13:00</option>
                   <option value="2">14:00</option>
                   <option value="3">15:00</option>
-                </select><font color="red">＊必ず入力してください</font>
+                  <option value="0">16:00</option>
+                  <option value="0">17:00</option>
+                  <option value="0">18:00</option>
+                  <option value="0">19:00</option>
+                  <option value="0">20:00</option>
+                  <option value="0">21:00</option>
+                  <option value="0">22:00</option>
+                  <option value="0">23:00</option>
+                  <option value="0">24:00</option>
+                  <option value="0">25:00</option>
+                </select>
+              </div>
             </label>
-            <a href="28.html" ><font color="red">戻る</font></a>
-            <br><br><br>
-            <button id="button" type="submit"><a href="＃">次へ</a></button>
+            <div class="errmsg"></div>
           </form>
-            
-
-
+          <button onclick="location.href='28_e.html'">エラー</button>
+          <button id="button" onclick="location.href='29.html'">次へ</button>
         </div>
 
 
