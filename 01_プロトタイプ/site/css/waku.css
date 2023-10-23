@@ -208,6 +208,36 @@ div.input_left{
   justify-content: flex-end;
 }
 
+
+/*確認画面のcss*/
+
+#kakunin3{
+  width: 80%;
+  border: solid 1px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kakunin_box{
+  width: 100%;
+  display: flex;
+}
+
+
+.kakunin_box div{
+  width: 50%;
+  margin-bottom: 5px;
+}
+
+.align_right{
+  text-align: right;
+}
+
+
+
+
 @media screen and (max-width: 959px) {
 
 
