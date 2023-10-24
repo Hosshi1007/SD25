@@ -52,6 +52,7 @@ function menu_click(hoge){
     //詳細ページに移動
     window.location.href = '101.html';
   }
+  
   function html38_click(num){
     //従業員名などの格納
     let id = elements.item(0).rows[num].cells[0].firstChild.data;
@@ -61,6 +62,7 @@ function menu_click(hoge){
     //詳細ページに移動
     window.location.href = '39.html';
   }
+
   let count1 = 0;
   function button_kanryou4() {
     count1++
