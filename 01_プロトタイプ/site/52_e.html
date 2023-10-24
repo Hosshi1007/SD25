@@ -47,7 +47,7 @@
           <a href="#"></a>
         </div>
         <div class="nav_textbox">
-          <a href="#" ><font color="red"></font></a>
+          <a href="#" ></a>
         </div>
         <div class="nav_textbox">
           <a href="#"></a>
@@ -67,17 +67,17 @@
             全ての項目に入力して「次へ」を押してください<br>
           </div>
         </div>
-<p style="text-align: center;"></p>
-       <div id="gamen">
+        <p style="text-align: center;"></p>
+        <div id="gamen_nyuuryoku">
         <div class="errmsg_h1">※入力エラーがあります。メッセージを確認して再入力してください。</div>
-          <form id="form" method="post" action="dummy.html">
+          <form id="form_nyuuryoku" method="post" action="dummy.html">
             <label class="input_label">
               <div class="input_left">予約日：</div>
               <input type="date" name="" maxlength="8" class="select" required="">
             </label>
-            <br><br>
+            <!-- <br><br> -->
             <div class="errmsg">※必ず入力してください</div>
-            <br>
+            <!-- <br> -->
             <label>
               <div class="input_left">予約時間：</div>
               <select class="select" required="">
@@ -88,26 +88,20 @@
                   <option value="3">15:00</option>
               </select>
             </label>
-            <br><br>
+            <!-- <br><br> -->
             <div class="errmsg">※必ず入力してください</div>
-            <br>
+            <!-- <br> -->
              <label class="input_label">
               <div class="input_left">予約人数：</div>
               <input type="text" name="sei" maxlength="10" placeholder="予約人数" required>
             </label>
             <a href="52.html" ><font color="red">戻る</font></a>
-            <br><br>
+            <!-- <br><br> -->
             <div class="errmsg">※必ず入力してください</div>
-            <br>
-            <button id="button" type="submit"><a href="#">次へ</a></button>
+            <!-- <br> -->
           </form>
-
-            <br><br><br>
-
-
-            
-
-
+          <button onclick="location.href='52.html'">通常</button>
+          <button id="button" onclick="location.href='53.html'">次へ</button>
         </div>
 
 
