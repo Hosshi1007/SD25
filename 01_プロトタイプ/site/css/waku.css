@@ -150,7 +150,7 @@ div#h2{
 }
 
 
-#gamen{
+main div#gamen{
   background-color: #15202b;
   width: 100%;
   height: 85%;
@@ -161,7 +161,7 @@ div#h2{
   overflow: auto;
 }
 
-#gamen::-webkit-scrollbar{
+main div#gamen::-webkit-scrollbar{
   display: none;
 }
 
