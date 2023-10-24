@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/waku.css">
     <link rel="stylesheet" type="text/css" href="css/table.css">
     <link rel="stylesheet" type="text/css" href="css/table2.css">
+    <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
     <script type="text/javascript" src="js/common.js"></script>
 
   </head>
@@ -46,7 +47,7 @@
           <a href="#"></a>
         </div>
         <div class="nav_textbox">
-          <a href="#" ><font color="red"></font></a>
+          <a href="#" ></a>
         </div>
         <div class="nav_textbox">
           <a href="#"></a>
@@ -67,39 +68,36 @@
           </div>
         </div>
 
-       <div id="gamen">
-          <form id="form" method="post" action="dummy.html">
+        <div id="gamen_nyuuryoku">
+        <div class="errmsg_h1"></div>
+          <form id="form_nyuuryoku" method="post" action="dummy.html">
             <label class="input_label">
-              <div class="input_left">予約日：</div>
-              <input type="date" name="" maxlength="8" class="select" required="">
+              <div class="input_left">予約日：<input type="date" name="" maxlength="8" class="select" required=""></div>
             </label>
-            <br><br><br>
+            <!-- <br><br> -->
+            <div class="errmsg"></div>
+            <!-- <br> -->
             <label>
-              <div class="input_left">予約時間：</div>
-              <select class="select" required="">
+              <div class="input_left">予約時間：
+                <select class="select" required="">
                   <option value="" selected="">選択してください</option>
                   <option value="0">12:00</option>
                   <option value="1">13:00</option>
                   <option value="2">14:00</option>
                   <option value="3">15:00</option>
                 </select>
+              </div>
             </label>
-            <br><br><br>
-             <label class="input_label">
-              <div class="input_left">予約人数：</div>
-              <input type="text" name="sei" maxlength="10" placeholder="姓" required>
+            <!-- <br><br> -->
+            <div class="errmsg"></div>
+            <!-- <br> -->
+            <label class="input_label">
+              <div class="input_left">予約人数：<input type="text" name="sei" maxlength="10" placeholder="姓" required></div>
             </label>
-            <a href="52_e.html" ><font color="red">エラー</font></a>
-            <br><br><br>
-            <button id="button" type="submit"><a href="53.html">次へ</a></button>
+            <div class="errmsg"></div>
           </form>
-
-            <br><br><br>
-
-
-            
-
-
+          <button onclick="location.href='52_e.html'">エラー</button>
+          <button id="button" onclick="location.href='53.html'">次へ</button>
         </div>
 
 

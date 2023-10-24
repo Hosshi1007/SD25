@@ -150,7 +150,7 @@ div#h2{
 }
 
 
-#gamen{
+main div#gamen{
   background-color: #15202b;
   width: 100%;
   height: 85%;
@@ -158,6 +158,11 @@ div#h2{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow: auto;
+}
+
+main div#gamen::-webkit-scrollbar{
+  display: none;
 }
 
 #form{
