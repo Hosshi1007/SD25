@@ -68,12 +68,15 @@
         </div>
 <p style="text-align: center;"><font color="red" size="5px"><br>＊入力エラーがあります。メッセージを確認して再入力してください</font></p>
        <div id="gamen">
+        <div class="errmsg_h1">※入力エラーがあります。メッセージを確認して再入力してください。</div>
           <form id="form" method="post" action="dummy.html">
             <label class="input_label">
               <div class="input_left">予約日：</div>
-              <input type="date" name="" maxlength="8" class="select" required=""><font color="red">＊必ず入力してください</font>
+              <input type="date" name="" maxlength="8" class="select" required="">
             </label>
-            <br><br><br>
+            <br><br>
+            <div class="errmsg">※必ず入力してください</div>
+            <br>
             <label>
               <div class="input_left">予約時間：</div>
               <select class="select" required="">
@@ -82,16 +85,21 @@
                   <option value="1">13:00</option>
                   <option value="2">14:00</option>
                   <option value="3">15:00</option>
-                </select><font color="red">＊必ず入力してください</font>
+                </select>
             </label>
-            <br><br><br>
+            <br><br>
+            <div class="errmsg">※必ず入力してください</div>
+            <br>
              <label class="input_label">
               <div class="input_left">予約人数：</div>
-              <input type="text" name="sei" maxlength="10" placeholder="予約人数" required><font color="red">＊必ず入力してください</font>
+              <input type="text" name="sei" maxlength="10" placeholder="予約人数" required>
             </label>
             <a href="55.html" ><font color="red">戻る</font></a>
-            <br><br><br>
-            <button id="button" type="submit"><a href="#">次へ</a></button>
+            <br><br>
+            <div class="errmsg">※必ず入力してください</div>
+            <br>
+            <button onclick="location.href='23_e.html'">エラー</button>
+            <button id="button" onclick="location.href='24.html'">次へ</button>
           </form>
 
             <br><br><br>
