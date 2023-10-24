@@ -65,20 +65,31 @@
           <div id="textbox2">
             条件を入力して会員を検索できます。表をクリックすると詳細画面へ遷移します。<br>
             <div id="html5" class="date">
-              発注ID:<input type="text">　発注日:<input type="date">　名称:<input type="text">
-              <button id="button" class="html5" onclick="location.href='110.html'">検索</button>
+              発注ID:<input type="text">　発注日:<input type="date">
             </div>
+            <div id="html5" class="date">
+              <p class="html110">名称:<input type="text"></p>
+            </div>
+              <button id="button" class="html5" onclick="location.href='110.html'">検索</button>
           </div>
         </div>
 
 
         <div id="gamen">
-          <div id="html5" class="html5">検索条件
-          <select>
-            <option>全て</option>
-          </select>
+          <div id="html5" class="html5">検索条件：全て
           </div>
-
+          <style>
+          div#html5.date {
+            margin: 2% 0 2% 4%;
+            text-align: left;
+          }
+          div#html5.date p.html110{
+            margin-left:28px;
+          }
+          button#button.html5{
+            margin:-6% 0 0 70%;
+          }
+          </style>
 
           <div id="html5" class="table table_110">
             <table class="findID">
@@ -90,7 +101,7 @@
                 <th>注文数</th>
                 <th>ステータス</th>
               </tr>
-              <tr onclick="appoint_click(1);" class="hover">
+              <tr onclick="html110_click(1);" class="hover">
                 <td>00001</td>
                 <td>2023年9月22日</td>
                 <td>2023年9月28日</td>
@@ -98,7 +109,7 @@
                 <td>500</td>
                 <td>入荷済み</td>
               </tr>
-              <tr onclick="appoint_click(2);" class="hover">
+              <tr onclick="html110_click(2);" class="hover">
                 <td>00002</td>
                 <td>2023年9月22日</td>
                 <td>2023年9月28日</td>
@@ -106,7 +117,7 @@
                 <td>500</td>
                 <td>入荷済み</td>
               </tr>
-              <tr onclick="appoint_click(3);" class="hover">
+              <tr onclick="html110_click(3);" class="hover">
                 <td>00003</td>
                 <td>2023年9月22日</td>
                 <td>2023年9月28日</td>
@@ -114,7 +125,7 @@
                 <td>500</td>
                 <td>入荷済み</td>
               </tr>
-              <tr onclick="appoint_click(4);" class="hover">
+              <tr onclick="html110_click(4);" class="hover">
                 <td>00004</td>
                 <td>2023年9月22日</td>
                 <td>2023年9月28日</td>
@@ -122,7 +133,7 @@
                 <td>500</td>
                 <td>入荷済み</td>
               </tr>
-              <tr onclick="appoint_click(5);" class="hover">
+              <tr onclick="html110_click(5);" class="hover">
                 <td>00005</td>
                 <td>2023年9月22日</td>
                 <td>2023年9月28日</td>
@@ -130,7 +141,7 @@
                 <td>500</td>
                 <td>入荷済み</td>
               </tr>
-              <tr onclick="appoint_click(6);" class="hover">
+              <tr onclick="html110_click(6);" class="hover">
                 <td>00006</td>
                 <td>2023年9月22日</td>
                 <td>2023年9月28日</td>

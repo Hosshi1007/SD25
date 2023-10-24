@@ -29,6 +29,17 @@ function menu_click(hoge){
       //詳細ページに移動
       window.location.href = '6.html';
     }
+    function html110_click(num){
+      let elements = document.getElementsByClassName("findID");
+      //従業員名などの格納
+      let id = elements.item(0).rows[num].cells[0].firstChild.data;
+      let id2 = elements.item(0).rows[num].cells[1].firstChild.data + " / " + elements.item(0).rows[num].cells[2].firstChild.data;
+      let id3 = elements.item(0).rows[num].cells[3].firstChild.data;
+      alert("発注ID：" + id + "\n発注日/納入日：" + id2 + "\n名称：" + id3);
+    
+      //詳細ページに移動
+      window.location.href = '111.html';
+    }
   function staff_click(num){
     let elements = document.getElementsByClassName("findID");
     //従業員名などの格納

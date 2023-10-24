@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="kaiin.css">
     <link rel="stylesheet" type="text/css" href="css/bunseki.css">
     <link rel="stylesheet" type="text/css" href="bunseki.css">
-    <script type="text/javascript" src="common.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 
   </head>
 
@@ -27,9 +27,9 @@
     <div id="wrap">
       <header>
         <div id="icon">
-          <a href="index.html">
+          <a href="126.html">
             <img src="images/S.I.N.G.S.png">
-            <p>従業員用 from S.I.N.G.S</p>
+            <p>店長用 from S.I.N.G.S</p>
           </a>
         </div>
         <div id="h1">
@@ -63,75 +63,99 @@
 
 
       <main>
-        <div id="h2">
+        <div id="h2" class="html62">
           <div id="textbox2">
            全ての項目に入力して「次へ」を押してください。
           </div>
         </div>
     
         <style>
+          select{
+            width:90px;
+            font-size: initial;
+          }
+          div#h2.html62,div#h2.html19{
+           margin-bottom:50px;
+          }
+          form#form.html19{
+           padding:20px 0 0 0;
+          }
+          form#form.html19 p#error_button2{
+          font-size: 1.3rem;
+          margin-left:530px;
+          }
+          p#error_button1{
+          text-align: center;
+          font-weight: bold;
+          text-shadow: black 2px 3px;
+          color:red;
+          font-size: 1.5rem;
+        }
+        p#error_button2{
+          position:fixed;
+          font-weight: bold;
+          text-shadow: black 2px 3px;
+          color:red;
+          font-size: 1.5rem;
+          margin-left: 450px;
+        }
+      </style>
 
-        </style>
+<p id="error_button1"></p>
 
-        <div id="gamen">
-          <form id="form" method="post" action="93.html">
+<div id="gamen">
+          
+  <form id="form" class="html19" method="post" action="dummy.html">
 
-            <label class="input_label" id="html14">
-                <div class="input_left" id="html14">姓：</div>
-                <input type="text" placeholder="（例）HAL">
-              </table>
-            </label>
+    <label class="input_label" id="html14">
+      <div class="input_left" id="html14">姓：</div>
+      <input type="text" placeholder="（例）HAL" id="error_button">
+    </label>
 
-            <label class="input_label" id="html14">
-              <div class="input_left" id="html14">名：</div>
-              <input type="text" placeholder="（例）太郎">
-            </label>
+    <label class="input_label" id="html14">
+      <div class="input_left" id="html14">名：</div>
+      <input type="text" placeholder="（例）太郎">
+    </label>
 
-            <label class="input_label" id="html14">
-              <div class="input_left" id="html14">セイ：</div>
-              <input type="text" placeholder="（例）ハル">
-            </label>
+    <label class="input_label" id="html14">
+      <div class="input_left" id="html14">セイ：</div>
+      <input type="text" placeholder="（例）ハル">
+    </label>
 
-            <label class="input_label" id="html14">
-              <div class="input_left" id="html14">メイ：</div>
-              <input type="text" placeholder="（例）タロウ">
-            </label>
+    <label class="input_label" id="html14">
+      <div class="input_left" id="html14">メイ：</div>
+      <input type="text" placeholder="（例）タロウ">
+    </label>
 
-            <label class="input_label" id="html14">
-              <div class="input_left" id="html14">性別：</div>
-              <input type="radio" name="sex" id="sex">男性
-              <input type="radio" name="sex" id="sex">女性
-            </label>
-            
-            <label class="input_label" id="html14_yuubin">
-              <div class="input_left" id="html14">郵便番号：</div>
-              <input type="text" placeholder="（例）450-0002"><button id="html14" onclick="location.href='8.html'">住所検索</button>
-            </label>
+    <label class="input_label" id="html14">
+      <div class="input_left" id="html14">性別：</div>
+      <input type="radio" name="sex" id="sex">男性
+      <input type="radio" name="sex" id="sex">女性
+    </label>
+    
+    <label class="input_label" id="html14_yuubin">
+      <div class="input_left" id="html14">郵便番号：</div>
+      <input type="text" placeholder="（例）450-0002"><button id="html14" onclick="location.href='87.html'">住所検索</button>
+    </label>
 
-            <label class="input_label" id="html14">
-              <div class="input_left" id="html14">住所：</div>
-              <input type="text" placeholder="（例）愛知県名古屋市中村区名駅４丁目２７−１ 総合校舎スパイラルタワーズ">
-            </label>
+    <label class="input_label" id="html14">
+      <div class="input_left" id="html14">住所：</div>
+      <input type="text" placeholder="（例）愛知県名古屋市中村区名駅４丁目２７−１ 総合校舎スパイラルタワーズ">
+    </label>
 
-            <label class="input_label" id="html14">
-              <div class="input_left" id="html14">メールアドレス：</div>
-              <input type="text" placeholder="（例）example@example.com">
-            </label>
+    <label class="input_label" id="html14">
+      <div class="input_left" id="html14">職業：</div>
+      <input type="text" placeholder="（例）学生">
+    </label>
 
-            <label class="input_label" id="html14">
-              <div class="input_left" id="html14">パスワード：</div>
-              <input type="password" placeholder="（例）パスワード">
-            </label>
-
-            <label class="input_label" id="html87">
-              <div class="input_left" id="html87">パスワード再入力：</div>
-              <input type="password" placeholder="（例）パスワード再入力">
-            </label>
-
-        </form>
-
-            <button id="button" onclick="location.href='93.html'">次へ</button>
-
+    <label class="input_label" id="html14">
+      <div class="input_left" id="html14">メールアドレス：</div>
+      <input type="text" placeholder="（例）example@example.com">
+    </label>
+    <p id="error_button2"></p>
+</form>
+<input type="button" value="エラー／表示切り替え" onclick="error_button();">
+    <button id="button" onclick="location.href='93.html'">次へ</button>
         </div>
 
 
