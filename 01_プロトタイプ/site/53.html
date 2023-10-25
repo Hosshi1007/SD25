@@ -8,13 +8,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <title>53.html</title>
-    <link rel="stylesheet" type="text/css" href="css/wakunashi.css">
+    <title>53.予約情報 登録確認(受付)</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <link rel="stylesheet" type="text/css" href="css/table.css">
-    <link rel="stylesheet" type="text/css" href="css/table2.css">
+    <link rel="stylesheet" type="text/css" href="css/kaiin.css">
     <script type="text/javascript" src="js/common.js"></script>
 
   </head>
@@ -25,14 +23,14 @@
     <div id="wrap">
       <header>
         <div id="icon">
-          <a href="dummy.html">
+          <a href="22.html">
             <img src="images/S.I.N.G.S.png">
             <p>従業員用 from S.I.N.G.S</p>
           </a>
         </div>
         <div id="h1">
           <div id="textbox">
-            予約登録確認
+            予約情報 登録確認
           </div>
         </div>
       </header>
@@ -40,7 +38,7 @@
 
       <nav id="gloval-nav">
         <div class="nav_textbox">
-          <a href="#">受付TOP</a>
+          <a href="137.html">受付TOP</a>
         </div>
         <div class="nav_textbox">
           <a href="#"></a>
@@ -67,36 +65,29 @@
             修正したい場合は「修正」ボタンを押してください。
           </div>
         </div>
-        <br>
+
+        <div id="kakunin4">
+        以下の内容で登録します。よろしいですか？
+        </div>
+
         <div id="gamen">
-          <table id="t-53">
-  <tbody>
-    <tr>
-      <td id="d-53">予約日</td>
-      <td id="d-53_1">yyyy年mm月dd日</td>
-       
-    </tr>
-    <tr>
-      <td id="d-53">予約時間</td>
-      <td id="d-53_1">num時num分</td>
-      
-    </tr>
-    <tr>
-      <td id="d-53">予約人数</td>
-      <td id="d-53_1">num人</td>
-      
-    </tr>
-  </tbody>
-</table>
-
-            <br>
-            <font size="6.7rem" color="white">以下の内容を確定します<br>　　よろしいですか？</font>
-<br>
-<a href="54.html" class="btn_50">登録</a>
+          <form id="form" class="kakunin3" method="post" action="57.html">
+            <div id="kakunin3">
+              <div class="kakunin_box">
+                <div class="align_right">予約日：</div><div>2023/10/25</div>
+              </div>
+              <div class="kakunin_box">
+                <div class="align_right">来店時間：</div><div>12：00</div>
+              </div>
+              <div class="kakunin_box">
+                <div class="align_right">退店時間：</div><div>14：00</div>
+              </div>
+              <div class="kakunin_box">
+                <div class="align_right">利用人数：</div><div>5名</div>
+              </div>
+            </div>
           </form>
-
-
-
+          <button id="button" onclick="location.href='54.html'">登録</button>
         </div>
 
 
