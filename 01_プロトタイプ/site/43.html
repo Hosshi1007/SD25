@@ -8,13 +8,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <title>43.html</title>
-    <link rel="stylesheet" type="text/css" href="css/wakunashi.css">
+    <title>43.会員情報 変更確認</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <link rel="stylesheet" type="text/css" href="css/table.css">
-    <link rel="stylesheet" type="text/css" href="css/table2.css">
+    <link rel="stylesheet" type="text/css" href="css/kaiin.css">
     <script type="text/javascript" src="js/common.js"></script>
 
   </head>
@@ -25,14 +22,14 @@
     <div id="wrap">
       <header>
         <div id="icon">
-          <a href="dummy.html">
+          <a href="22.html">
             <img src="images/S.I.N.G.S.png">
             <p>従業員用 from S.I.N.G.S</p>
           </a>
         </div>
         <div id="h1">
           <div id="textbox">
-            会員情報変更確認
+            会員情報 変更確認
           </div>
         </div>
       </header>
@@ -40,7 +37,7 @@
 
       <nav id="gloval-nav">
         <div class="nav_textbox">
-          <a href="#">受付TOP</a>
+          <a href="137.html">受付TOP</a>
         </div>
         <div class="nav_textbox">
           <a href="#"></a>
@@ -49,7 +46,7 @@
           <a href="#"></a>
         </div>
         <div class="nav_textbox">
-          <a href="35.html">修正</a>
+          <a href="42.html">修正</a>
         </div>
         <div class="nav_textbox">
           <a href="#"></a>
@@ -63,77 +60,33 @@
       <main>
         <div id="h2">
           <div id="textbox2">
-            入力内容を確認してよろしければ「変更」ボタンを押してください<br>
-            修正したい場合は「修正」ボタンを押してください
+            変更内容を確認してよろしければ「変更」ボタンを押してください<br>
+            修正したい場合は「修正」ボタンを押してください。変更部のみ表示しています。
           </div>
         </div>
+
         <div id="gamen">
-          <table id="t-34">
-  <tbody>
-    <tr>
-      <td id="d-36">姓</td>
-      <td id="d-36_1">武</td>
-       
-    </tr>
-    <tr>
-      <td id="d-36">名</td>
-      <td id="d-36_1">裕</td>
-      
-    </tr>
-    <tr>
-      <td id="d-36">セイ</td>
-      <td id="d-36_1">タケ</td>
-      
-    </tr>
-    <tr>
-      <td id="d-36">メイ</td>
-      <td id="d-36_1">ユタカ</td>
-       
-      
-    </tr>
-    <tr>
-      <td id="d-36">性別</td>
-      <td id="d-36_1">男</td>
-      
-    </tr>
-    <tr>
-      <td id="d-36">郵便番号</td>
-      <td id="d-36_1">450-0002</td>
-    </tr>
-    <tr>
-      <td id="d-36">住所</td>
-      <td id="d-36_1">愛知県名古屋市中村区名駅4丁目27-1総合校舎スパイラルタワーズ</td>
-    </tr>
-    <tr>
-      <td id="d-36">職業</td>
-      <td id="d-36_1">学生</td>
-    </tr>
-    <tr>
-      <td id="d-36">メールアドレス</td>
-      <td id="d-36_1">example@example.com</td>
-    </tr>
-    <tr>
-      <td id="d-36">パスワード</td>
-      <td id="d-36_1">123456789</td>
-    </tr>
-  </tbody>
-</table>
-
-            <br>
-            <font size="6.7rem" color="white">以下の内容を確定します<br>　　よろしいですか？</font>
-            
-            <a href="44.html" class="btn_29">変更</a>
-          </form>
-
-            <br><br>
-
-
-            
-
-
-        </div>
-
-
+          <form id="form" class="kakunin3" method="post" action="30.html">
+            <div id="kakunin3">
+              <div class="kakunin_box">
+                <div class="align_right">職業：</div><div>学生</div>
+              </div>
+              <div class="kakunin_box">
+                <div class="align_right">性別：</div><div>男性</div>
+              </div>
+              <div class="kakunin_box align_right">
+                <div>↓</div>
+              </div>
+              <div class="kakunin_box">
+                <div class="align_right">職業：</div><div>会社員</div>
+              </div>
+              <div class="kakunin_box">
+                <div class="align_right">性別：</div><div>女性</div>
+              </div>
+            </div>
+            </form>
+            <button id="button" onclick="location.href='44.html'">変更</button>
+          </div>
 
 
       </main>
