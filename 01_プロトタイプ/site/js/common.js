@@ -75,6 +75,15 @@ function menu_click(hoge){
     window.location.href = '39.html';
   }
 
+  function yoyaku_click(num){
+    let elements = document.getElementsByClassName("findID");
+    //従業員名などの格納
+    let id = elements.item(0).rows[num].cells[0].firstChild.data;
+    //alert("会員ID：" + id + "\n名前：" + id2 + "\n性別：" + id3);
+    //詳細ページに移動
+    window.location.href = '48.html';
+  }
+
   let count1 = 0;
   function button_kanryou4() {
     count1++
