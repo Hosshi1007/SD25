@@ -4,7 +4,6 @@ function tr_click(num){
   //会員ID格納
   let id = elements.item(0).rows[num].cells[0].firstChild.data;
   //alert(id);
-
   //詳細ページに移動
   window.location.href = 'dummy.html';
 }
@@ -17,87 +16,88 @@ function menu_click(hoge){
   //詳細ページに移動
   window.location.href = url_go;
 }
-    //こっから僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお
-    function appoint_click(num){
-      let elements = document.getElementsByClassName("findID");
-      //従業員名などの格納
-      let id = elements.item(0).rows[num].cells[0].firstChild.data;
-      let id2 = elements.item(0).rows[num].cells[1].firstChild.data + "　" + elements.item(0).rows[num].cells[2].firstChild.data;
-      let id3 = elements.item(0).rows[num].cells[3].firstChild.data;
-      alert("予約ID：" + id + "\n予約日：" + id2 + "\n予約人数：" + id3);
-    
-      //詳細ページに移動
-      window.location.href = '6.html';
+//こっから僕の術式だにょんよんにょｙんっよにょよのよよよおおおおんほおおおおおお
+function appoint_click(num){
+  let elements = document.getElementsByClassName("findID");
+  //従業員名などの格納
+  let id = elements.item(0).rows[num].cells[0].firstChild.data;
+  let id2 = elements.item(0).rows[num].cells[1].firstChild.data + "　" + elements.item(0).rows[num].cells[2].firstChild.data;
+  let id3 = elements.item(0).rows[num].cells[3].firstChild.data;
+  //alert("予約ID：" + id + "\n予約日：" + id2 + "\n予約人数：" + id3);
+  //詳細ページに移動
+  window.location.href = '6.html';
+}
+
+function html110_click(num){
+  let elements = document.getElementsByClassName("findID");
+  //従業員名などの格納
+  let id = elements.item(0).rows[num].cells[0].firstChild.data;
+  let id2 = elements.item(0).rows[num].cells[1].firstChild.data + " / " + elements.item(0).rows[num].cells[2].firstChild.data;
+  let id3 = elements.item(0).rows[num].cells[3].firstChild.data;
+  //alert("発注ID：" + id + "\n発注日/納入日：" + id2 + "\n名称：" + id3);
+
+  //詳細ページに移動
+  window.location.href = '111.html';
+}
+
+function staff_click(num){
+  let elements = document.getElementsByClassName("findID");
+  //従業員名などの格納
+  let id = elements.item(0).rows[num].cells[0].firstChild.data;
+  let id2 = elements.item(0).rows[num].cells[1].firstChild.data + "　" + elements.item(0).rows[num].cells[2].firstChild.data;
+  let id3 = elements.item(0).rows[num].cells[3].firstChild.data;
+  //alert("従業員ID：" + id + "\n従業員名：" + id2 + "\n雇用形態：" + id3);
+  //詳細ページに移動
+  window.location.href = '91.html';
+}
+
+
+function html100_click(num){
+  let elements = document.getElementsByClassName("findID");
+  //メニュー名などの格納
+  let id = elements.item(0).rows[num].cells[0].firstChild.data;
+  let id2 = elements.item(0).rows[num].cells[1].firstChild.data;
+  let id3 = elements.item(0).rows[num].cells[2].firstChild.data;
+  //alert("名称：" + id + "\n分類：" + id2 + "\n価格：" + id3 + "円");
+  //詳細ページに移動
+  window.location.href = '101.html';
+}
+  
+function html38_click(num){
+  let elements = document.getElementsByClassName("findID");
+  //従業員名などの格納
+  let id = elements.item(0).rows[num].cells[0].firstChild.data;
+  let id2 = elements.item(0).rows[num].cells[1].firstChild.data + "　" + elements.item(0).rows[num].cells[2].firstChild.data;
+  let id3 = elements.item(0).rows[num].cells[5].firstChild.data;
+  //alert("会員ID：" + id + "\n名前：" + id2 + "\n性別：" + id3);
+  //詳細ページに移動
+  window.location.href = '39.html';
+}
+
+function yoyaku_click(num){
+  let elements = document.getElementsByClassName("findID");
+  //従業員名などの格納
+  let id = elements.item(0).rows[num].cells[0].firstChild.data;
+  //alert("会員ID：" + id + "\n名前：" + id2 + "\n性別：" + id3);
+  //詳細ページに移動
+  window.location.href = '48.html';
+}
+
+let count1 = 0;
+function button_kanryou4() {
+  count1++
+  var let1 = document.getElementById("change") != null;
+  if(let1 == true){
+    var target2 = document.getElementById("change");
+    if(count1 % 2 == 0){
+      target2.innerHTML = "予約登録が完了しました。";
     }
-    function html110_click(num){
-      let elements = document.getElementsByClassName("findID");
-      //従業員名などの格納
-      let id = elements.item(0).rows[num].cells[0].firstChild.data;
-      let id2 = elements.item(0).rows[num].cells[1].firstChild.data + " / " + elements.item(0).rows[num].cells[2].firstChild.data;
-      let id3 = elements.item(0).rows[num].cells[3].firstChild.data;
-      alert("発注ID：" + id + "\n発注日/納入日：" + id2 + "\n名称：" + id3);
-    
-      //詳細ページに移動
-      window.location.href = '111.html';
+    else{
+      target2.innerHTML = "<font color='red'>※登録処理に失敗しました。<br>もう一度登録し直すかサポートに連絡してください。</font>";
     }
-  function staff_click(num){
-    let elements = document.getElementsByClassName("findID");
-    //従業員名などの格納
-    let id = elements.item(0).rows[num].cells[0].firstChild.data;
-    let id2 = elements.item(0).rows[num].cells[1].firstChild.data + "　" + elements.item(0).rows[num].cells[2].firstChild.data;
-    let id3 = elements.item(0).rows[num].cells[3].firstChild.data;
-    alert("従業員ID：" + id + "\n従業員名：" + id2 + "\n雇用形態：" + id3);
-  
-    //詳細ページに移動
-    window.location.href = '91.html';
   }
-  function html100_click(num){
-  
-    let elements = document.getElementsByClassName("findID");
-    //メニュー名などの格納
-    let id = elements.item(0).rows[num].cells[0].firstChild.data;
-    let id2 = elements.item(0).rows[num].cells[1].firstChild.data;
-    let id3 = elements.item(0).rows[num].cells[2].firstChild.data;
-    alert("名称：" + id + "\n分類：" + id2 + "\n価格：" + id3 + "円");
-  
-    //詳細ページに移動
-    window.location.href = '101.html';
-  }
-  
-  function html38_click(num){
-    let elements = document.getElementsByClassName("findID");
-    //従業員名などの格納
-    let id = elements.item(0).rows[num].cells[0].firstChild.data;
-    let id2 = elements.item(0).rows[num].cells[1].firstChild.data + "　" + elements.item(0).rows[num].cells[2].firstChild.data;
-    let id3 = elements.item(0).rows[num].cells[5].firstChild.data;
-    alert("会員ID：" + id + "\n名前：" + id2 + "\n性別：" + id3);
-    //詳細ページに移動
-    window.location.href = '39.html';
   }
 
-  function yoyaku_click(num){
-    let elements = document.getElementsByClassName("findID");
-    //従業員名などの格納
-    let id = elements.item(0).rows[num].cells[0].firstChild.data;
-    //alert("会員ID：" + id + "\n名前：" + id2 + "\n性別：" + id3);
-    //詳細ページに移動
-    window.location.href = '48.html';
-  }
-
-  let count1 = 0;
-  function button_kanryou4() {
-    count1++
-    var let1 = document.getElementById("change") != null;
-    if(let1 == true){
-      var target2 = document.getElementById("change");
-      if(count1 % 2 == 0){
-        target2.innerHTML = "予約登録が完了しました。";
-      }
-      else{
-        target2.innerHTML = "<font color='red'>※登録処理に失敗しました。<br>もう一度登録し直すかサポートに連絡してください。</font>";
-      }
-    }
-   }
   let count = 0;
   function error_button() {
     count++
