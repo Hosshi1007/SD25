@@ -8,12 +8,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <title>58_1.html</title>
-    <link rel="stylesheet" type="text/css" href="css/wakunashi.css">
+    <title>58.予約情報 削除(受付)</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
     <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/kaiin.css">
     <link rel="stylesheet" type="text/css" href="css/table2.css">
     <script type="text/javascript" src="js/common.js"></script>
 
@@ -25,14 +24,14 @@
     <div id="wrap">
       <header>
         <div id="icon">
-          <a href="dummy.html">
+          <a href="22.html">
             <img src="images/S.I.N.G.S.png">
             <p>従業員用 from S.I.N.G.S</p>
           </a>
         </div>
         <div id="h1">
           <div id="textbox">
-            予約削除
+            予約情報 削除
           </div>
         </div>
       </header>
@@ -40,7 +39,7 @@
 
       <nav id="gloval-nav">
         <div class="nav_textbox">
-          <a href="#">受付TOP</a>
+          <a href="137.html">受付TOP</a>
         </div>
         <div class="nav_textbox">
           <a href="#"></a>
@@ -63,42 +62,47 @@
       <main>
         <div id="h2">
           <div id="textbox2">
-            入力内容を確認して、よろしければ「承認」ボタンを押してください。<br>
+            削除内容を確認して、よろしければ「承認」ボタンを押してください。<br>
           </div>
         </div>
-        <br>
-<font color="red" size="5px" style="text-align: center;"><p>＊最終確認です。よろしければ「承認」ボタンを押してください。</p></font>
+
         <div id="gamen">
-          <table id="t-53">
-  <tbody>
-    <tr>
-      <td id="d-53">予約日</td>
-      <td id="d-53_1">yyyy年mm月dd日</td>
-       
-    </tr>
-    <tr>
-      <td id="d-53">予約時間</td>
-      <td id="d-53_1">num時num分</td>
-      
-    </tr>
-    <tr>
-      <td id="d-53">予約人数</td>
-      <td id="d-53_1">num人</td>
-      
-    </tr>
-  </tbody>
-</table>
 
-            <br>
-<font size="6.7rem" color="white">以下の内容を確定します<br>　　よろしいですか？</font>
-<br>
-<a href="59.html" class="btn_58">承認</a>
-          </form>
+          <div class="kakunin_delete">※最終確認です。本当に削除してよかったら「承認」を押してください。</div>
+          <button id="button" onclick="location.href='58_1.html'">承認</button>
 
-
-
-        </div>
-
+          <div id="html13" class="table">
+            <table class="findID table_syousai">
+              <tr>
+                <th>予約ID</th>
+                <td>00001</td>
+              </tr>
+              <tr>
+                <th>会員ID</th>
+                <td>00001</td>
+              </tr>
+              <tr>
+                <th>お名前</th>
+                <td>武　豊</td>
+              </tr>
+              <tr>
+                <th>来店時間</th>
+                <td>22：00</td>
+              </tr>
+              <tr>
+                <th>退店時間</th>
+                <td>24：00</td>
+              </tr>
+              <tr>
+                <th>予約人数</th>
+                <td>3人</td>
+              </tr>
+              <tr>
+                <th>状態</th>
+                <td>来店待ち</td>
+              </tr>
+            </table>
+          </div>
 
 
 
