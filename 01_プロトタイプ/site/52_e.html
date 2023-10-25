@@ -8,13 +8,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <title>52_e.html</title>
+    <title>52.予約情報 登録(受付)</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <link rel="stylesheet" type="text/css" href="css/table.css">
-    <link rel="stylesheet" type="text/css" href="css/table2.css">
     <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
     <script type="text/javascript" src="js/common.js"></script>
 
@@ -33,7 +30,7 @@
         </div>
         <div id="h1">
           <div id="textbox">
-            予約登録
+            予約情報 登録
           </div>
         </div>
       </header>
@@ -41,13 +38,7 @@
 
       <nav id="gloval-nav">
         <div class="nav_textbox">
-          <a href="#">受付TOP</a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#" ></a>
+          <a href="137.html">受付TOP</a>
         </div>
         <div class="nav_textbox">
           <a href="#"></a>
@@ -56,7 +47,13 @@
           <a href="#"></a>
         </div>
         <div class="nav_textbox">
-          <a href="39.html">詳細に戻る</a>
+          <a href="#"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href="#"></a>
+        </div>
+        <div class="nav_textbox">
+          <a href=""></a>
         </div>
       </nav>
 
@@ -67,38 +64,82 @@
             全ての項目に入力して「次へ」を押してください<br>
           </div>
         </div>
-        <p style="text-align: center;"></p>
+
         <div id="gamen_nyuuryoku">
-        <div class="errmsg_h1">※入力エラーがあります。メッセージを確認して再入力してください。</div>
-          <form id="form_nyuuryoku" method="post" action="dummy.html">
+          <div class="errmsg_h1">※入力エラーがあります。メッセージを確認して再入力してください。</div>
+          <form id="form_nyuuryoku" method="post" action="#">
             <label class="input_label">
-              <div class="input_left">予約日：<input type="date" name="" maxlength="8" class="select" required=""></div>
+              <div class="input_left">予約日：</div>
+              <div><input type="date" name="stock_name" maxlength="8" placeholder="例)たこやき" required></div>
             </label>
-            <!-- <br><br> -->
-            <div class="errmsg">※必ず入力してください</div>
-            <!-- <br> -->
-            <label>
-              <div class="input_left">予約時間：
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">来店時間：</div>
+              <div>
                 <select class="select" required="">
-                    <option value="" selected="">選択してください</option>
-                    <option value="0">12:00</option>
-                    <option value="1">13:00</option>
-                    <option value="2">14:00</option>
-                    <option value="3">15:00</option>
+                  <option value="" selected="">選択してください</option>
+                  <option value="0">10:00</option>
+                  <option value="0">11:00</option>
+                  <option value="0">12:00</option>
+                  <option value="1">13:00</option>
+                  <option value="2">14:00</option>
+                  <option value="3">15:00</option>
+                  <option value="0">16:00</option>
+                  <option value="0">17:00</option>
+                  <option value="0">18:00</option>
+                  <option value="0">19:00</option>
+                  <option value="0">20:00</option>
+                  <option value="0">21:00</option>
+                  <option value="0">22:00</option>
+                  <option value="0">23:00</option>
+                  <option value="0">24:00</option>
                 </select>
               </div>
             </label>
-            <!-- <br><br> -->
-            <div class="errmsg">※必ず入力してください</div>
-            <!-- <br> -->
+            <div class="errmsg">※来店時間:必ず選択してください</div>
+
             <label class="input_label">
-              <div class="input_left">予約人数：<input type="text" name="sei" maxlength="10" placeholder="予約人数" required></div>
+              <div class="input_left">退店時間：</div>
+              <div>
+                <select class="select" required="">
+                  <option value="" selected="">選択してください</option>
+                  <option value="0">11:00</option>
+                  <option value="0">12:00</option>
+                  <option value="1">13:00</option>
+                  <option value="2">14:00</option>
+                  <option value="3">15:00</option>
+                  <option value="0">16:00</option>
+                  <option value="0">17:00</option>
+                  <option value="0">18:00</option>
+                  <option value="0">19:00</option>
+                  <option value="0">20:00</option>
+                  <option value="0">21:00</option>
+                  <option value="0">22:00</option>
+                  <option value="0">23:00</option>
+                  <option value="0">24:00</option>
+                  <option value="0">25:00</option>
+                </select>
+              </div>
             </label>
-            <!-- <br><br> -->
-            <div class="errmsg">※必ず入力してください</div>
-            <!-- <br> -->
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">利用人数：</div>
+              <div>
+                <select class="select" required="">
+                  <option value="0" selected="">選択してください</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </div>
+            </label>
+
           </form>
-          <button onclick="location.href='52.html'">通常</button>
           <button id="button" onclick="location.href='53.html'">次へ</button>
         </div>
 
@@ -106,6 +147,8 @@
 
 
       </main>
+
+
 
 
     </div>
