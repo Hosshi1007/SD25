@@ -2,143 +2,142 @@
 
 <html lang="ja">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width">
 
-    <title>92.社員・バイト情報 変更</title>
+  <title>92.社員・バイト情報 変更</title>
 
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
-    <script type="text/javascript" src="js/common.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/waku.css">
+  <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
+  <script type="text/javascript" src="js/common.js"></script>
 
-  </head>
+</head>
 
 
-  <body>
+<body>
 
-    <div id="wrap">
-      <header>
-        <div id="icon">
-          <a href="126.html">
-            <img src="images/S.I.N.G.S.png">
-            <p>店長用 from S.I.N.G.S</p>
-          </a>
+  <div id="wrap">
+    <header>
+      <div id="icon">
+        <a href="126.html">
+          <img src="images/S.I.N.G.S.png">
+          <p>店長用 from S.I.N.G.S</p>
+        </a>
+      </div>
+      <div id="h1">
+        <div id="textbox">
+          社員・バイト情報 変更入力
         </div>
-        <div id="h1">
-          <div id="textbox">
-            社員・バイト情報 変更入力
-          </div>
+      </div>
+    </header>
+
+
+    <nav id="gloval-nav">
+      <div class="nav_textbox">
+        <a href="126.html">店長TOP</a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+    </nav>
+
+
+    <main>
+      <div id="h2">
+        <div id="textbox2">
+          全ての項目に入力して「次へ」を押してください。
         </div>
-      </header>
+      </div>
 
+      <div id="gamen_nyuuryoku">
+        <div class="errmsg_h1"></div>
+        <form id="form_nyuuryoku" method="post" action="#">
+          <label class="input_label">
+            <div class="input_left">姓：</div>
+            <div><input type="text" name="menu_name" maxlength="8" placeholder="例)鈴木" required></div>
+          </label>
+          <div class="errmsg"></div>
 
-      <nav id="gloval-nav">
-        <div class="nav_textbox">
-          <a href="126.html">店長TOP</a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-      </nav>
+          <label class="input_label">
+            <div class="input_left">名：</div>
+            <div><input type="text" name="menu_name" maxlength="8" placeholder="一郎" required></div>
+          </label>
+          <div class="errmsg"></div>
 
+          <label class="input_label">
+            <div class="input_left">セイ：</div>
+            <div><input type="text" name="menu_name" maxlength="8" placeholder="スズキ" required></div>
+          </label>
+          <div class="errmsg"></div>
 
-      <main>
-        <div id="h2">
-          <div id="textbox2">
-            入力内容を確認してよろしければ「はい」を押してください<br>
-            修正したい場合は「修正」ボタンを押してください
-          </div>
-        </div>
-        
-        <div id="gamen_nyuuryoku">
-          <div class="errmsg_h1"></div>
-          <form id="form_nyuuryoku" method="post" action="#">
-            <label class="input_label">
-              <div class="input_left">姓：</div>
-              <div><input type="text" name="menu_name" maxlength="8" placeholder="例)鈴木" required></div>
-            </label>
-            <div class="errmsg"></div>
+          <label class="input_label">
+            <div class="input_left">メイ：</div>
+            <div><input type="text" name="menu_name" maxlength="8" placeholder="イチロー" required></div>
+          </label>
+          <div class="errmsg"></div>
 
-            <label class="input_label">
-              <div class="input_left">名：</div>
-              <div><input type="text" name="menu_name" maxlength="8" placeholder="一郎" required></div>
-            </label>
-            <div class="errmsg"></div>
+          <label class="input_label">
+            <div class="input_left">性別：</div>
+            <div>
+              <select class="select" required="">
+                <option value="" selected="">選択してください</option>
+                <option value="0">男性</option>
+                <option value="1">女性</option>
+                <option value="2">選択しない</option>
+              </select>
+            </div>
+          </label>
+          <div class="errmsg"></div>
 
-            <label class="input_label">
-              <div class="input_left">セイ：</div>
-              <div><input type="text" name="menu_name" maxlength="8" placeholder="スズキ" required></div>
-            </label>
-            <div class="errmsg"></div>
+          <label class="input_label">
+            <div class="input_left">郵便番号：</div>
+            <div><input type="text" name="menu_name" maxlength="8" placeholder="ハイフン有" required></div>
+          </label>
+          <div class="errmsg"></div>
 
-            <label class="input_label">
-              <div class="input_left">メイ：</div>
-              <div><input type="text" name="menu_name" maxlength="8" placeholder="イチロー" required></div>
-            </label>
-            <div class="errmsg"></div>
+          <label class="input_label">
+            <div class="input_left">住所：</div>
+            <div><input type="text" name="menu_name" maxlength="8" placeholder="" required></div>
+          </label>
+          <div class="errmsg"></div>
 
-            <label class="input_label">
-              <div class="input_left">性別：</div>
-              <div>
-                <select class="select" required="">
-                  <option value="" selected="">選択してください</option>
-                  <option value="0">男性</option>
-                  <option value="1">女性</option>
-                  <option value="2">選択しない</option>
-                </select>
-              </div>
-            </label>
-            <div class="errmsg"></div>
+          <label class="input_label">
+            <div class="input_left">メールアドレス：</div>
+            <div><input type="text" name="menu_name" maxlength="8" placeholder="example@halhal.co.jp" required></div>
+          </label>
+          <div class="errmsg"></div>
 
-            <label class="input_label">
-              <div class="input_left">郵便番号：</div>
-              <div><input type="text" name="menu_name" maxlength="8" placeholder="ハイフン有" required></div>
-            </label>
-            <div class="errmsg"></div>
-
-            <label class="input_label">
-              <div class="input_left">住所：</div>
-              <div><input type="text" name="menu_name" maxlength="8" placeholder="" required></div>
-            </label>
-            <div class="errmsg"></div>
-
-            <label class="input_label">
-              <div class="input_left">メールアドレス：</div>
-              <div><input type="text" name="menu_name" maxlength="8" placeholder="example@halhal.co.jp" required></div>
-            </label>
-            <div class="errmsg"></div>
-
-          </form>
-          <button onclick="location.href='92_e.html'">エラー</button>
-          <button id="button" onclick="location.href='93.html'">次へ</button>
-        </div>
+        </form>
+        <button onclick="location.href='92_e.html'">エラー</button>
+        <button id="button" onclick="location.href='93.html'">次へ</button>
+      </div>
 
 
 
 
-      </main>
+    </main>
 
 
-    </div>
-    
+  </div>
 
-  </body>
+
+</body>
 
 </html>
