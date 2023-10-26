@@ -90,11 +90,11 @@
                </div>
             </div>
 
-            <p id="error_button1"></p>
-
             <div id="gamen">
+               <div class="errmsg_h1" id="error_button1"></div>
                <form id="form" method="post" class="html19" action="#">
                   <label class="input_label">
+                     <div class="errmsg"></div>
                      <div class="input_left">予約日時：</div>
                      <input
                         type="date"
@@ -104,9 +104,8 @@
                         id="error_button"
                         required
                      />
-                     <p id="error_button2"></p>
+                     <p class="input_label" id="error_button2"></p>
                   </label>
-
                   <label>
                      <div class="input_left" id="yoyaku_time">予約時間：</div>
                      <select name="yoyaku_hour">
@@ -151,7 +150,8 @@
                         <option>55</option>
                      </select>
                   </label>
-                  <label>
+                  <div class="errmsg"></div>
+                  <label class="html2">
                      <div class="input_left">予約人数：</div>
                      <select name="capacity">
                         <option>1人</option>
@@ -161,15 +161,14 @@
                         <option>5人</option>
                         <option>6人</option>
                      </select>
+                     <br />
                   </label>
                </form>
-
                <input
                   type="button"
                   value="エラー／表示切り替え"
                   onclick="error_button();"
                />
-
                <button id="button" onclick="location.href='8.html'">
                   次へ
                </button>
