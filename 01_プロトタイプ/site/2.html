@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-
+ 
 <html lang="ja">
-
+ 
   <head>
-
+ 
     <meta charset="utf-8">
-
+ 
     <meta name="viewport" content="width=device-width">
-
+ 
     <title>2.html</title>
-
+ 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
     <link rel="stylesheet" type="text/css" href="css/kaiin.css">
     <script type="text/javascript" src="js/common.js"></script>
-
+ 
     <style>
+ 
         select{
           width:90px;
           font-size: initial;
         }
+        div.html2{
+          margin:0 0 0 30px;
+        }
         div#h2.html62,div#h2.html19{
           margin-bottom:50px;
         }
-        form#form.html19{
-          padding:20px 0 0 0;
+        div#h2.html62,div#h2.html19{
+          margin-bottom:0px;
         }
-        form#form.html19 p#error_button2{
-          font-size: 1.3rem;
-          margin-left:325px;
+        form#form.html19{
+          padding:0 0 0 0;
         }
         p#error_button1{
           text-align: center;
@@ -37,22 +40,38 @@
           /* text-shadow: black 2px 3px; */
           color:red;
           font-size: 1.5rem;
+          padding:0px 0px;
+          margin:0px 0px;
       }
       p#error_button2{
-        position:fixed;
-        /* font-weight: bold; */
-        /* text-shadow: black 2px 3px; */
-        color:red;
-        font-size: 1.5rem;
-        margin-left: 470px;
+          position:initial;
+          font-weight: bold;
+          text-shadow:initial;
+          color:red;
+          font-size: 1rem;
+          margin-left:initial;
+          position:fixed;
+          margin:45px 0 0 20px;
+      }
+      div.errmsg_h1{
+        width: 100%;
+        height: 80px;
+        color: red;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #form label{
+        margin:0 0 25px 0;
       }
     </style>
-
+ 
   </head>
-
-
+ 
+ 
   <body>
-
+ 
     <div id="wrap">
       <header>
         <div id="icon">
@@ -67,8 +86,8 @@
           </div>
         </div>
       </header>
-
-
+ 
+ 
       <nav id="gloval-nav">
         <div class="nav_textbox">
           <a href="1.html">会員用TOP</a>
@@ -89,27 +108,27 @@
           <a href=""></a>
         </div>
       </nav>
-
-
+ 
+ 
       <main>
         <div id="h2" class="html19">
           <div id="textbox2">
            全ての項目に入力して「次へ」を押してください。
           </div>
         </div>
-
-        <p id="error_button1"></p>
-
+ 
+ 
+ 
         <div id="gamen">
-          <div class="errmsg_h1"></div>
+          <div class="errmsg_h1" id="error_button1"></div>
           <form id="form" method="post" class="html19" action="#">
+            <div class="html2">
             <label class="input_label">
               <div class="errmsg"></div>
               <div class="input_left">予約日時：</div>
-              <input type="date" name="time" maxlength="10" placeholder="姓" id="error_button" required>
-              <br><p id="error_button2"></p>
+              <input type="date" name="time" maxlength="10" placeholder="姓" required>
+              <p class="input_label" id="error_button2"></p>
             </label>
-            <div class="errmsg"></div>
             <label>
               <div class="input_left" id="yoyaku_time">予約時間：</div>
               <select name="yoyaku_hour">
@@ -153,10 +172,10 @@
                   <option>50</option>
                   <option>55</option>
                 </select>
-                <br><p id="error_button2"></p>
+                <br>
             </label>
             <div class="errmsg"></div>
-            <label>
+            <label class="html2">
               <div class="input_left">予約人数：</div>
               <select name="capacity">
                 <option>1人</option>
@@ -166,21 +185,22 @@
                 <option>5人</option>
                 <option>6人</option>
               </select>
-              <br><p id="error_button2"></p>
+              <br>
               </label>
+              </div>
             </form>
             <input type="button" value="エラー／表示切り替え" onclick="error_button();">
             <button id="button" onclick="location.href='3.html'">次へ</button>
         </div>
-
-
-
+ 
+ 
+ 
       </main>
-
-
+ 
+ 
     </div>
-    
-
+   
+ 
   </body>
-
+ 
 </html>
