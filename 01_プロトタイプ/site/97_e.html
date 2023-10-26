@@ -2,162 +2,134 @@
 
 <html lang="ja">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <title>97_e.html</title>
+  <title>97.メニュー情報 登録</title>
 
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <link rel="stylesheet" type="text/css" href="css/table.css">
-    <link rel="stylesheet" type="text/css" href="css/table2.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/waku.css">
+  <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
 
-    <link rel="stylesheet" type="text/css" href="css/bunseki.css">
-    <link rel="stylesheet" type="text/css" href="bunseki.css">
-    <link rel="stylesheet" type="text/css" href="css/Error.css">
-    <link rel="stylesheet" type="text/css" href="Error.css">
+  <link rel="stylesheet" type="text/css" href="css/bunseki.css">
+  <link rel="stylesheet" type="text/css" href="bunseki.css">
+  <link rel="stylesheet" type="text/css" href="css/Error.css">
+  <link rel="stylesheet" type="text/css" href="Error.css">
 
-    <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
 
-  </head>
+</head>
 
 
-  <body>
+<body>
 
-    <div id="wrap">
-      <header>
+  <div id="wrap">
+    <header>
 
-        <div id="icon">
-          <a href="126.html">
-            <img src="images/S.I.N.G.S.png">
-            <p>店長用 from S.I.N.G.S</p>
-          </a>
+      <div id="icon">
+        <a href="126.html">
+          <img src="images/S.I.N.G.S.png">
+          <p>店長用 from S.I.N.G.S</p>
+        </a>
+      </div>
+
+      <div id="h1">
+        <div id="textbox">
+          メニュー登録
         </div>
+      </div>
 
-        <div id="h1">
-          <div id="textbox">
-            メニュー登録
-          </div>
+    </header>
+
+
+    <nav id="gloval-nav">
+      <div class="nav_textbox">
+        <a href="126.html">店長TOP</a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="126.html">戻る</a>
+      </div>
+    </nav>
+
+
+    <main>
+      <div id="h2">
+        <div id="textbox2">
+          入力内容を確認してよろしければ「はい」を押してください<br>
+          修正したい場合は「修正」ボタンを押してください
         </div>
+      </div>
 
-      </header>
+      <div id="gamen_nyuuryoku">
+        <div class="errmsg_h1">※入力エラーがあります。メッセージを確認して再入力してください。</div>
+        <form id="form_nyuuryoku" method="post" action="#">
+          <label class="input_label">
+            <div class="input_left">名称：</div>
+            <div><input type="text" name="menu_name" maxlength="8" placeholder="例)たこやき" required></div>
+          </label>
+          <div class="errmsg">　　　　　　　　※必ず入力してください</div>
 
+          <label class="input_label">
+            <div class="input_left">価格：</div>
+            <div><input type="text" name="menu_name" maxlength="8" placeholder="500" required></div>
+          </label>
+          <div class="errmsg"></div>
 
-      <nav id="gloval-nav">
-        <div class="nav_textbox">
-          <a href="126.html">店長TOP</a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="126.html">戻る</a>
-        </div>
-      </nav>
+          <label class="input_label">
+            <div class="input_left">販売開始日：</div>
+            <div><input type="date" name="menu_name" maxlength="8" placeholder="500" required></div>
+          </label>
+          <div class="errmsg"></div>
 
+          <label class="input_label">
+            <div class="input_left">販売終了日：</div>
+            <div><input type="date" name="menu_name" maxlength="8" placeholder="500" required></div>
+          </label>
+          <div class="errmsg"></div>
 
-      <main>
-
-        <div id="h2">
-          <div id="textbox2" style="text-align: left;">
-            全ての項目に入力して「次へ」を押してください
-          </div>
-        </div>
-
-        <style>
-          form#form{
-            padding:0 50px 0 0;
-          }
-        </style>
-
-        <div id="gamen">
-          <div class="mozi_e">
-            ※入力エラーがあります。メッセージを確認して再入力してください
-          </div>
-          <form id="form" method="post" action="98.html">
-            <label>
-              <div class="text_e">※いずれかを選択してください</div>
-            </label>
-            <label>
-              <div class="input_left">名称：</div>
-              <select class="select" required>
-                <option value="" selected>選択してください</option>
-                <option value="0" >12:00</option>
-                <option value="1" >13:00</option>
-                <option value="2" >14:00</option>
-                <option value="3" >15:00</option>
+          <label class="input_label">
+            <div class="input_left">ジャンル：</div>
+            <div>
+              <select class="select" required="">
+                <option value="" selected="">選択してください</option>
+                <option value="0">フード</option>
+                <option value="0">ドリンク</option>
+                <option value="0">アルコール</option>
               </select>
-            </label>
+            </div>
+          </label>
+          <div class="errmsg"></div>
 
-            <label>
-              <div class="text_e">※いずれかを選択してください</div>
-            </label>
-            <label>
-              <div class="input_left">価格(税抜き)：</div>
-                <select class="select" required>
-                  <option value="" selected>選択してください</option>
-                  <option value="0" >12:00</option>
-                  <option value="1" >13:00</option>
-                  <option value="2" >14:00</option>
-                  <option value="3" >15:00</option>
-                </select>
-            </label>
-
-            <label>
-              <div class="text_e">※いずれかを選択してください</div>
-            </label>
-            <label>
-              <div class="input_left">販売開始日：</div>
-              <div class="date">
-                <input type="date" name="" maxlength="8" class="select" required>
-              </div>
-            </label>
-
-            <label>
-              <div class="text_e">※いずれかを選択してください</div>
-            </label>
-            <label>
-              <div class="input_left">販売終了日：</div>
-              <div class="date">
-                <input type="date" name="" maxlength="8" class="select" required>
-              </div>
-            </label>
-
-            <label>
-              <div class="text_e">※いずれかを選択してください</div>
-            </label>
-            <label>
-              <div class="input_left">ジャンル：</div>
-                <select class="select" required>
-                  <option value="" selected>選択してください</option>
-                  <option value="0" >05分</option>
-                  <option value="1" >10分</option>
-                  <option value="2" >15分</option>
-                  <option value="3" >20分</option>
-                </select>
-            </label>
-
-            <a href="97.html">通常</a>
-            <button id="button" type="submit">次へ</button>
-          </form>
-
-      </main>
-    </div>
+        </form>
+        <button onclick="location.href='97.html'">通常</button>
+        <button id="button" onclick="location.href='98.html'">次へ</button>
+      </div>
 
 
-  </body>
+
+
+    </main>
+
+
+  </div>
+
+
+</body>
 
 </html>
