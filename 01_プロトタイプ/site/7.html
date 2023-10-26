@@ -93,76 +93,80 @@
             <div id="gamen">
                <div class="errmsg_h1" id="error_button1"></div>
                <form id="form" method="post" class="html19" action="#">
-                  <label class="input_label">
+                  <div class="html2">
+                     <label class="input_label">
+                        <div class="errmsg"></div>
+                        <div class="input_left">予約日時：</div>
+                        <input
+                           type="date"
+                           name="time"
+                           maxlength="10"
+                           placeholder="姓"
+                           required
+                        />
+                        <p class="input_label" id="error_button2"></p>
+                     </label>
+                     <label>
+                        <div class="input_left" id="yoyaku_time">
+                           予約時間：
+                        </div>
+                        <select name="yoyaku_hour">
+                           <option>00</option>
+                           <option>01</option>
+                           <option>02</option>
+                           <option>03</option>
+                           <option>04</option>
+                           <option>05</option>
+                           <option>06</option>
+                           <option>07</option>
+                           <option>08</option>
+                           <option>09</option>
+                           <option>10</option>
+                           <option>11</option>
+                           <option>12</option>
+                           <option>13</option>
+                           <option>14</option>
+                           <option>15</option>
+                           <option>16</option>
+                           <option>17</option>
+                           <option>18</option>
+                           <option>19</option>
+                           <option>20</option>
+                           <option>21</option>
+                           <option>22</option>
+                           <option>23</option>
+                        </select>
+                        ：
+                        <select name="yoyaku_minute">
+                           <option>00</option>
+                           <option>05</option>
+                           <option>10</option>
+                           <option>15</option>
+                           <option>20</option>
+                           <option>25</option>
+                           <option>30</option>
+                           <option>35</option>
+                           <option>40</option>
+                           <option>45</option>
+                           <option>50</option>
+                           <option>55</option>
+                        </select>
+                        <br />
+                     </label>
                      <div class="errmsg"></div>
-                     <div class="input_left">予約日時：</div>
-                     <input
-                        type="date"
-                        name="time"
-                        maxlength="10"
-                        placeholder="姓"
-                        id="error_button"
-                        required
-                     />
-                     <p class="input_label" id="error_button2"></p>
-                  </label>
-                  <label>
-                     <div class="input_left" id="yoyaku_time">予約時間：</div>
-                     <select name="yoyaku_hour">
-                        <option>00</option>
-                        <option>01</option>
-                        <option>02</option>
-                        <option>03</option>
-                        <option>04</option>
-                        <option>05</option>
-                        <option>06</option>
-                        <option>07</option>
-                        <option>08</option>
-                        <option>09</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                        <option>13</option>
-                        <option>14</option>
-                        <option>15</option>
-                        <option>16</option>
-                        <option>17</option>
-                        <option>18</option>
-                        <option>19</option>
-                        <option>20</option>
-                        <option>21</option>
-                        <option>22</option>
-                        <option>23</option>
-                     </select>
-                     ：
-                     <select name="yoyaku_minute">
-                        <option>00</option>
-                        <option>05</option>
-                        <option>10</option>
-                        <option>15</option>
-                        <option>20</option>
-                        <option>25</option>
-                        <option>30</option>
-                        <option>35</option>
-                        <option>40</option>
-                        <option>45</option>
-                        <option>50</option>
-                        <option>55</option>
-                     </select>
-                  </label>
-                  <div class="errmsg"></div>
-                  <label class="html2">
-                     <div class="input_left">予約人数：</div>
-                     <select name="capacity">
-                        <option>1人</option>
-                        <option>2人</option>
-                        <option>3人</option>
-                        <option>4人</option>
-                        <option>5人</option>
-                        <option>6人</option>
-                     </select>
-                     <br />
-                  </label>
+                     <label class="html2">
+                        <div class="input_left">予約人数：</div>
+                        <select name="capacity">
+                           <option>1人</option>
+                           <option>2人</option>
+                           <option>3人</option>
+                           <option>4人</option>
+                           <option>5人</option>
+                           <option>6人</option>
+                        </select>
+                        <br />
+                     </label>
+                  </div>
                </form>
                <input
                   type="button"
