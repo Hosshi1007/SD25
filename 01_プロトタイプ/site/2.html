@@ -1,206 +1,202 @@
 <!DOCTYPE html>
- 
+
 <html lang="ja">
- 
-  <head>
- 
-    <meta charset="utf-8">
- 
-    <meta name="viewport" content="width=device-width">
- 
-    <title>2.html</title>
- 
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <link rel="stylesheet" type="text/css" href="css/kaiin.css">
-    <script type="text/javascript" src="js/common.js"></script>
- 
-    <style>
- 
-        select{
-          width:90px;
-          font-size: initial;
-        }
-        div.html2{
-          margin:0 0 0 30px;
-        }
-        div#h2.html62,div#h2.html19{
-          margin-bottom:50px;
-        }
-        div#h2.html62,div#h2.html19{
-          margin-bottom:0px;
-        }
-        form#form.html19{
-          padding:0 0 0 0;
-        }
-        p#error_button1{
-          text-align: center;
-          /* font-weight: bold; */
-          /* text-shadow: black 2px 3px; */
-          color:red;
-          font-size: 1.5rem;
-          padding:0px 0px;
-          margin:0px 0px;
-      }
-      p#error_button2{
-          position:initial;
-          font-weight: bold;
-          text-shadow:initial;
-          color:red;
-          font-size: 1rem;
-          margin-left:initial;
-          position:fixed;
-          margin:45px 0 0 20px;
-      }
-      div.errmsg_h1{
-        width: 100%;
-        height: 80px;
-        color: red;
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      #form label{
-        margin:0 0 25px 0;
-      }
-    </style>
- 
-  </head>
- 
- 
-  <body>
- 
-    <div id="wrap">
-      <header>
-        <div id="icon">
-          <a href="1.html">
-            <img src="images/S.I.N.G.S.png">
-            <p>会員用 from S.I.N.G.S</p>
-          </a>
-        </div>
-        <div id="h1">
-          <div id="textbox">
-            予約登録入力
-          </div>
-        </div>
-      </header>
- 
- 
-      <nav id="gloval-nav">
-        <div class="nav_textbox">
-          <a href="1.html">会員用TOP</a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href=""></a>
-        </div>
-      </nav>
- 
- 
-      <main>
-        <div id="h2" class="html19">
-          <div id="textbox2">
-           全ての項目に入力して「次へ」を押してください。
-          </div>
-        </div>
- 
- 
- 
-        <div id="gamen">
-          <div class="errmsg_h1" id="error_button1"></div>
-          <form id="form" method="post" class="html19" action="#">
-            <div class="html2">
-            <label class="input_label">
-              <div class="errmsg"></div>
-              <div class="input_left">予約日時：</div>
-              <input type="date" name="time" maxlength="10" placeholder="姓" required>
-              <p class="input_label" id="error_button2"></p>
-            </label>
-            <label>
-              <div class="input_left" id="yoyaku_time">予約時間：</div>
-              <select name="yoyaku_hour">
-                <option>00</option>
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-                <option>04</option>
-                <option>05</option>
-                <option>06</option>
-                <option>07</option>
-                <option>08</option>
-                <option>09</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-                <option>13</option>
-                <option>14</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-                <option>21</option>
-                <option>22</option>
-                <option>23</option>
-                </select>
-                ：
-                <select name="yoyaku_minute">
-                  <option>00</option>
-                  <option>05</option>
-                  <option>10</option>
-                  <option>15</option>
-                  <option>20</option>
-                  <option>25</option>
-                  <option>30</option>
-                  <option>35</option>
-                  <option>40</option>
-                  <option>45</option>
-                  <option>50</option>
-                  <option>55</option>
-                </select>
-                <br>
-            </label>
-            <div class="errmsg"></div>
-            <label class="html2">
-              <div class="input_left">予約人数：</div>
-              <select name="capacity">
-                <option>1人</option>
-                <option>2人</option>
-                <option>3人</option>
-                <option>4人</option>
-                <option>5人</option>
-                <option>6人</option>
-              </select>
-              <br>
-              </label>
-              </div>
-            </form>
-            <input type="button" value="エラー／表示切り替え" onclick="error_button();">
-            <button id="button" onclick="location.href='3.html'">次へ</button>
-        </div>
- 
- 
- 
-      </main>
- 
- 
-    </div>
-   
- 
-  </body>
- 
+   <head>
+      <meta charset="utf-8" />
+
+      <meta name="viewport" content="width=device-width" />
+
+      <title>2.html</title>
+
+      <link rel="stylesheet" type="text/css" href="css/reset.css" />
+      <link rel="stylesheet" type="text/css" href="css/common.css" />
+      <link rel="stylesheet" type="text/css" href="css/waku.css" />
+      <link rel="stylesheet" type="text/css" href="css/kaiin.css" />
+      <script type="text/javascript" src="js/common.js"></script>
+
+      <style>
+         select {
+            width: 90px;
+            font-size: initial;
+         }
+         div.html2 {
+            margin: 0 0 0 30px;
+         }
+         div#h2.html62,
+         div#h2.html19 {
+            margin-bottom: 50px;
+         }
+         div#h2.html62,
+         div#h2.html19 {
+            margin-bottom: 0px;
+         }
+         form#form.html19 {
+            padding: 0 0 0 0;
+         }
+         p#error_button1 {
+            text-align: center;
+            /* font-weight: bold; */
+            /* text-shadow: black 2px 3px; */
+            color: red;
+            font-size: 1.5rem;
+            padding: 0px 0px;
+            margin: 0px 0px;
+         }
+         p#error_button2 {
+            position: initial;
+            font-weight: bold;
+            text-shadow: initial;
+            color: red;
+            font-size: 1rem;
+            margin-left: initial;
+            position: fixed;
+            margin: 45px 0 0 20px;
+         }
+         div.errmsg_h1 {
+            width: 100%;
+            height: 80px;
+            color: red;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         #form label {
+            margin: 0 0 25px 0;
+         }
+      </style>
+   </head>
+
+   <body>
+      <div id="wrap">
+         <header>
+            <div id="icon">
+               <a href="1.html">
+                  <img src="images/S.I.N.G.S.png" />
+                  <p>会員用 from S.I.N.G.S</p>
+               </a>
+            </div>
+            <div id="h1">
+               <div id="textbox">予約登録入力</div>
+            </div>
+         </header>
+
+         <nav id="gloval-nav">
+            <div class="nav_textbox">
+               <a href="1.html">会員用TOP</a>
+            </div>
+            <div class="nav_textbox">
+               <a href="#"></a>
+            </div>
+            <div class="nav_textbox">
+               <a href="#"></a>
+            </div>
+            <div class="nav_textbox">
+               <a href="#"></a>
+            </div>
+            <div class="nav_textbox">
+               <a href="#"></a>
+            </div>
+            <div class="nav_textbox">
+               <a href=""></a>
+            </div>
+         </nav>
+
+         <main>
+            <div id="h2" class="html19">
+               <div id="textbox2">
+                  全ての項目に入力して「次へ」を押してください。
+               </div>
+            </div>
+
+            <div id="gamen">
+               <div class="errmsg_h1" id="error_button1"></div>
+               <form id="form" method="post" class="html19" action="#">
+                  <div class="html2">
+                     <label class="input_label">
+                        <div class="errmsg"></div>
+                        <div class="input_left">予約日時：</div>
+                        <input
+                           type="date"
+                           name="time"
+                           maxlength="10"
+                           placeholder="姓"
+                           required
+                        />
+                        <p class="input_label" id="error_button2"></p>
+                     </label>
+                     <label>
+                        <div class="input_left" id="yoyaku_time">
+                           予約時間：
+                        </div>
+                        <select name="yoyaku_hour">
+                           <option>00</option>
+                           <option>01</option>
+                           <option>02</option>
+                           <option>03</option>
+                           <option>04</option>
+                           <option>05</option>
+                           <option>06</option>
+                           <option>07</option>
+                           <option>08</option>
+                           <option>09</option>
+                           <option>10</option>
+                           <option>11</option>
+                           <option>12</option>
+                           <option>13</option>
+                           <option>14</option>
+                           <option>15</option>
+                           <option>16</option>
+                           <option>17</option>
+                           <option>18</option>
+                           <option>19</option>
+                           <option>20</option>
+                           <option>21</option>
+                           <option>22</option>
+                           <option>23</option>
+                        </select>
+                        ：
+                        <select name="yoyaku_minute">
+                           <option>00</option>
+                           <option>05</option>
+                           <option>10</option>
+                           <option>15</option>
+                           <option>20</option>
+                           <option>25</option>
+                           <option>30</option>
+                           <option>35</option>
+                           <option>40</option>
+                           <option>45</option>
+                           <option>50</option>
+                           <option>55</option>
+                        </select>
+                        <br />
+                     </label>
+                     <div class="errmsg"></div>
+                     <label class="html2">
+                        <div class="input_left">予約人数：</div>
+                        <select name="capacity">
+                           <option>1人</option>
+                           <option>2人</option>
+                           <option>3人</option>
+                           <option>4人</option>
+                           <option>5人</option>
+                           <option>6人</option>
+                        </select>
+                        <br />
+                     </label>
+                  </div>
+               </form>
+               <input
+                  type="button"
+                  value="エラー／表示切り替え"
+                  onclick="error_button();"
+               />
+               <button id="button" onclick="location.href='3.html'">
+                  次へ
+               </button>
+            </div>
+         </main>
+      </div>
+   </body>
 </html>
