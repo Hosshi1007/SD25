@@ -20,7 +20,6 @@
     <link rel="stylesheet" type="text/css" href="bunseki.css">
     <link rel="stylesheet" type="text/css" href="css/Error.css">
     <link rel="stylesheet" type="text/css" href="Error.css">
-    <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
 
     <script type="text/javascript" src="js/common.js"></script>
 
@@ -33,9 +32,9 @@
       <header>
 
         <div id="icon">
-          <a href="126.html">
+          <a href="dummy.html">
             <img src="images/S.I.N.G.S.png">
-            <p>店長用 from S.I.N.G.S</p>
+            <p>従業員用 from S.I.N.G.S</p>
           </a>
         </div>
 
@@ -79,25 +78,29 @@
         </div>
 
 
-        <div id="gamen_nyuuryoku">
-          
-          <div class="errmsg_h1"></div>
+        <div id="gamen">
+          <div class="mozi_e">
+            ※入力エラーがあります。メッセージを確認して再入力してください
+          </div>
           <div class="mozi">
             シフト登録する従業員　従業員ID　20659　纐纈彪真
           </div>
-          <div class="errmsg_h1">※入力エラーがあります。メッセージを確認して再入力してください。</div>
-          <form id="form_nyuuryoku" method="post" action="83.html">
+          <form id="form" method="post" action="83.html">
             <label>
               <div class="input_left">シフト<br>登録日：</div>
-              <div><input type="date" name="stock_name" maxlength="8" required></div>
+              <div class="input_e">
+                <div class="date">
+                  <input type="date" name="" maxlength="8" class="select" required>
+                </div>
               </div>
             </label>
 
-            <div class="errmsg">※必ず入力してください</div>
+            <label>
+              <div class="text_e">※いずれかを選択してください</div>
+            </label>
 
             <label>
               <div class="input_left">出勤時間：</div>
-              <div>
                 <select class="select" required>
                   <option value="" selected>選択してください</option>
                   <option value="0" >12:00</option>
@@ -105,12 +108,14 @@
                   <option value="2" >14:00</option>
                   <option value="3" >15:00</option>
                 </select>
-              </div>
+            </label>
+
+            <label>
+              <div class="text_e">※いずれかを選択してください</div>
             </label>
 
             <label>
               <div class="input_left">通勤時間：</div>
-              <div>
                 <select class="select" required>
                   <option value="" selected>選択してください</option>
                   <option value="0" >05分</option>
@@ -118,7 +123,10 @@
                   <option value="2" >15分</option>
                   <option value="3" >20分</option>
                 </select>
-              </div>
+            </label>
+
+            <label>
+              <div class="text_e">※いずれかを選択してください</div>
             </label>
 
             <a href="82.html">通常</a>
