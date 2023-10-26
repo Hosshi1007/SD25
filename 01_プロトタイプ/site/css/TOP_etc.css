@@ -75,7 +75,7 @@ main#main_TOPetc h1{
   top: 30px;
   left: 15px;
   height: 5%;
-  width: 15%;
+  width: 20%;
   min-width: 150px;
   display: flex;
   justify-content: center;
@@ -89,6 +89,7 @@ main#main_TOPetc h1{
 }
 
 #icon_top a{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -104,8 +105,8 @@ main#main_TOPetc h1{
 }
 
 #icon_top p{
+  width: 220px;
   color: white;
   font-size: 22px;
   margin: 0 5px 0 5px;
-  width: 40%;
 }
