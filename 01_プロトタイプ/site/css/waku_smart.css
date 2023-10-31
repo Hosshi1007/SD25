@@ -465,3 +465,14 @@ main h1.h1_kaiinn {
   letter-spacing: 4px;
   font-size: 20px;
 }
+
+/*予約画面のcss*/
+
+.ryoukinnsetumei{
+  color: white;
+}
+
+.ryoukinnsetumei table td{
+  padding: 3px;
+  border: 1px solid white;
+}
