@@ -493,7 +493,7 @@ table.table_kaiinn tr{
   color: black;
 }
 
-table.table_kaiinn tr:hover{
+table.table_kaiinn tr.hover:hover{
   opacity: 0.5;
   background-color: dimgrey;
   cursor: pointer;
