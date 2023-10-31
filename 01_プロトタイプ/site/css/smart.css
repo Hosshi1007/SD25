@@ -119,3 +119,10 @@ div.register {
 .bg_gold {
   background-color: #ffd700;
 }
+
+.comment{
+  position:absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 30px;
+}

@@ -11,78 +11,120 @@
     <title>20.html</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <link rel="stylesheet" type="text/css" href="css/kaiin.css">
-    <script type="text/javascript" src="common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/waku_smart.css">
+    <!-- バリデーション用 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/validationEngine.jquery.min.css" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-ja.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery.validationEngine.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function(){
+         jQuery("#form_nyuuryoku").validationEngine();
+      });
+      </script>
+    <script type="text/javascript" src="js/common.js"></script>
 
   </head>
+
+  <div class="comment">スマートフォン想定 390×750[px] </div>
 
 
   <body>
 
     <div id="wrap">
-      <header>
-        <div id="icon">
-          <a href="index.html">
-            <img src="images/S.I.N.G.S.png">
-            <p>まさる堂</p>
-          </a>
+      <header class="header">
+        <div class="navtext-container">
+          <div class="navtext">まさる堂</div>
         </div>
-        <div id="h1">
-          <div id="textbox">
-            新規会員登録　登録内容確認
-          </div>
-        </div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li class="top"><a href="141.html">ログイン画面に戻る</a></li>
+        </ul>
+    
       </header>
 
 
-      <nav id="gloval-nav">
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="19.html">修正</a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-      </nav>
-
 
       <main>
+        <div id="h1">
+          <div id="textbox">
+            新規会員登録 確認
+          </div>
+        </div>
         <div id="h2">
           <div id="textbox2">
-            入力内容を確認して、よろしければ「登録」ボタンを押してください。<br>
-            修正したい場合は「修正」ボタンを押してください。
+            入力内容を確認して、よろしければ「登録」を押してください。
+            「修正」を押すと入力画面に戻ります。
+
           </div>
         </div>
         
-        <div id="kakunin4">
-        以下の内容を確定します。よろしいですか？
-        </div>
+        <div id="gamen_nyuuryoku">
+          <div class="errmsg_h1"></div>
+          <form id="form_nyuuryoku" method="post" action="#">
+            <label class="input_label">
+              <div class="input_left">姓：</div>
+              <div class="right60 bg_gray">武</div>
+              <div class="errmsg"></div>
+            </label>
+            
 
-        <div id="gamen">
-          <form id="form" class="kakunin3" method="post" action="dummy.html">
-            <div id="kakunin3" style="border: solid 1px white">
-              名前：武　裕<br>
-              フリガナ：タケ　ユタカ<br>
-              性別：男<br>
-              郵便番号：450-0002<br>
-              住所：愛知県名古屋市中村区名駅４丁目２７−１ 総合校舎スパイラルタワーズ<br>
-              メールアドレス：yutaka-max@example.com<br>
-              </div>
-            </form>
-            <button id="button" onclick="location.href='21.html'">登録</button>
+            <label class="input_label">
+              <div class="input_left">名：</div>
+              <div class="right60 bg_gray">裕</div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">セイ：</div>
+              <div class="right60 bg_gray">タケ</div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">メイ：</div>
+              <div class="right60 bg_gray">ユタカ</div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">性別：</div>
+              <div class="right60 bg_gray">男性</div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">郵便番号：</div>
+              <div class="right60 bg_gray">123-4567</div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">住所：</div>
+              <div class="right60 bg_gray">愛知県名古屋市中村区名駅4丁目27-1総合校舎スパイラルタワーズ</div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">メールアドレス：</div>
+              <div class="right60 bg_gray">example@halhal.co.jp</div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">パスワード：</div>
+              <div class="right60">**********</div>
+            </label>
+            <div class="errmsg">※セキュリティの観点から表示していません</div>
+
+          </form>
+          
+          <div class="div_kakuninbtn">
+              <button id="button_smart" onclick="location.href='19.html'">修正</button>
+              <button id="button_smart" onclick="location.href='21.html'">次へ</button>
+          </div>
+          
 
         </div>
 
