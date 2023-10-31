@@ -476,3 +476,51 @@ main h1.h1_kaiinn {
   padding: 3px;
   border: 1px solid white;
 }
+
+/*予約確認画面のCSS*/
+table.table_kaiinn{
+  width: 95%;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+table.table_kaiinn tr{
+  height: 40px;
+  border: 1px solid white;
+  background-color: #71a6ea;
+  color: black;
+}
+
+table.table_kaiinn tr:hover{
+  opacity: 0.5;
+  background-color: dimgrey;
+  cursor: pointer;
+}
+
+
+table.table_kaiinn td,
+table.table_kaiinn th{
+  border: 1px solid white;
+  line-height: 40px;
+}
+
+.div_kennsaku{
+  margin: 15px 0 0 0;
+  width: 90%;
+  height: 80px;
+  padding: 10px;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+
+.div_kennsaku div{
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
