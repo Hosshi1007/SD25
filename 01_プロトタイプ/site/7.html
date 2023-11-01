@@ -45,12 +45,12 @@
          <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
          <ul class="menu">
             <li class="top"><a href="1.html">会員HOME</a></li>
-            <li ><a href="2.html">予約する</a></li>
-            <li ><a href="5.html">予約の確認</a></li>
-            <li ><a href="12.html">混雑状況の確認</a></li>
-            <li ><a href="13.html">会員登録情報確認</a></li>
-            <li ><a href="141.html">ログアウト</a></li>
-          </ul>
+            <li><a href="2.html">予約する</a></li>
+            <li><a href="5.html">予約の確認</a></li>
+            <li><a href="12.html">混雑状況の確認</a></li>
+            <li><a href="13.html">会員登録情報確認</a></li>
+            <li><a href="141.html">ログアウト</a></li>
+         </ul>
 
       </header>
 
@@ -152,7 +152,7 @@
             ※時間帯で重なる場合は高い料金に合わせる<br>
             ※フリータイムは時間帯をまたいで利用できない
 
-            
+
          </div>
 
          <div id="gamen_nyuuryoku">
@@ -160,13 +160,14 @@
             <form id="form_nyuuryoku" method="post" action="#">
                <label class="input_label">
                   <div class="input_left">予約日：</div>
-                  <div class="right60"><input class="validate[required,custom[date],future[NOW]]" type="date" name="rev_date" value="2023-11-07"></div>
+                  <div class="right100"><input class="validate[required,custom[date],future[NOW]]" type="date"
+                        name="rev_date" value="2023-11-07"></div>
                   <div class="errmsg"></div>
                </label>
 
                <label class="input_label">
                   <div class="input_left">来店時間：</div>
-                  <div class="right60">
+                  <div class="right100">
                      <select class="validate[required]" name="rev_start">
                         <option>10:00</option>
                         <option>11:00</option>
@@ -190,7 +191,7 @@
 
                <label class="input_label">
                   <div class="input_left">退店予定時間：</div>
-                  <div class="right60">
+                  <div class="right100">
                      <select class="validate[required]" name="rev_end">
                         <option>10:00</option>
                         <option>11:00</option>
@@ -214,7 +215,7 @@
 
                <label class="input_label">
                   <div class="input_left">利用プラン：</div>
-                  <div class="right60">
+                  <div class="right100">
                      <select class="validate[required]" name="rev_plan">
                         <option>１時間料金</option>
                         <option>フリープラン</option>
@@ -225,8 +226,8 @@
 
 
 
-               
-               
+
+
             </form>
             <button id="button_smart" onclick="location.href='8.html'">次へ</button>
          </div>
