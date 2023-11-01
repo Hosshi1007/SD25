@@ -9,97 +9,118 @@
     <meta name="viewport" content="width=device-width">
 
     <title>15.html</title>
-    <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
+
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <link rel="stylesheet" type="text/css" href="css/kaiin.css">
-    <script type="text/javascript" src="common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/waku_smart.css">
+    <script type="text/javascript" src="js/common.js"></script>
 
   </head>
+
+  <div class="comment">スマートフォン想定 390×750[px] </div>
 
 
   <body>
 
     <div id="wrap">
-      <header>
-        <div id="icon">
-          <a href="1.html">
-            <img src="images/S.I.N.G.S.png">
-            <p>まさる堂</p>
-          </a>
+      <header class="header">
+        <div class="navtext-container">
+          <div class="navtext">まさる堂</div>
         </div>
-        <div id="h1">
-          <div id="textbox">
-            会員情報変更確認画面
-          </div>
-        </div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li class="top"><a href="1.html">会員HOME</a></li>
+          <li><a href="2.html">予約する</a></li>
+          <li><a href="5.html">予約の確認</a></li>
+          <li><a href="12.html">混雑状況の確認</a></li>
+          <li><a href="13.html">会員登録情報確認</a></li>
+          <li><a href="141.html">ログアウト</a></li>
+        </ul>
+    
       </header>
 
 
-      <nav id="gloval-nav">
-        <div class="nav_textbox">
-          <a href="1.html">会員用TOP</a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="14.html">修正</a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-      </nav>
-
 
       <main>
-        <div id="h2">
-          <div id="textbox2">
-            入力内容を確認して、よろしければ「変更」ボタンを押してください。<br>
-            修正したい場合は「修正」ボタンを押してください。
+        <div id="h1">
+          <div id="textbox">
+            会員登録情報の変更 確認
           </div>
         </div>
+        <div id="h2">
+          <div id="textbox2">
+            会員登録情報を以下の内容に変更します。<br>
+            よろしければ「変更」を押してください。
 
-        <div id="gamen">
-          <form id="form" class="kakunin3" method="post" action="30.html">
-            <div id="kakunin3">
-              <div class="kakunin_box">
-                <div class="align_right">姓：</div><div>HAL</div>
-              </div>
-              <div class="kakunin_box">
-                <div class="align_right">名：</div><div>太郎</div>
-              </div>
-              <div class="kakunin_box">
-                <div class="align_right">セイ：</div><div>ハル</div>
-              </div>
-              <div class="kakunin_box">
-                <div class="align_right">メイ：</div><div>タロウ</div>
-              </div>
-              <div class="kakunin_box align_right">
-                <div>↓</div>
-              </div>
-              <div class="kakunin_box">
-                <div class="align_right">姓：</div><div>武</div>
-              </div>
-              <div class="kakunin_box">
-                <div class="align_right">名：</div><div>裕</div>
-              </div>
-              <div class="kakunin_box">
-                <div class="align_right">セイ：</div><div>タケ</div>
-              </div>
-              <div class="kakunin_box">
-                <div class="align_right">メイ：</div><div>ユタカ</div>
-              </div>
-            </div>
+          </div>
+        </div>
+        
+        <div id="gamen_nyuuryoku">
+          <div class="errmsg_h1"></div>
+          <form id="form_nyuuryoku" method="post" action="#">
+            <label class="input_label">
+              <div class="input_left">姓：</div>
+              <div class="right60 bg_gray">武</div>
+              <div class="right60 bg_gray"></div>
+              <div class="errmsg"></div>
+            </label>
+            
+
+            <label class="input_label">
+              <div class="input_left">名：</div>
+              <div class="right60 bg_gray">裕</div>
+              <div class="right60 bg_gray"></div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">セイ：</div>
+              <div class="right60 bg_gray">タケ</div>
+              <div class="right60 bg_gray"></div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">メイ：</div>
+              <div class="right60 bg_gray">ユタカ</div>
+              <div class="right60 bg_gray"></div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">性別：</div>
+              <div class="right60 bg_gray">男性</div>
+              <div class="right60 bg_gray"></div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">郵便番号：</div>
+              <div class="right60 bg_gray">123-4567</div>
+              <div class="right60 bg_gray"></div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">住所：</div>
+              <div class="right100 bg_gray">愛知県名古屋市中村区名駅4丁目27-1総合校舎スパイラルタワーズ</div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">メールアドレス：</div>
+              <div class="right100 bg_gray">example@halhal.co.jp<br>→ example@example.co.jp</div>
+            </label>
+            <div class="errmsg"></div>
+
           </form>
-            <button id="button" onclick="location.href='16.html'">変更</button>
+          
+          <div class="div_kakuninbtn">
+              <button id="button_smart" onclick="location.href='14.html'">修正</button>
+              <button id="button_smart" onclick="location.href='16.html'">変更</button>
+          </div>
+          
+
         </div>
 
       </main>

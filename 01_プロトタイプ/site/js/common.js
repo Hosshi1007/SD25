@@ -191,3 +191,18 @@ function hattyuu_click(num){
 
 })();
 
+function delete_check(num){
+  let result = window.confirm("本当に削除してもよろしいですか？");
+  if(result){
+    window.location.href = '11.html';
+  }
+}
+
+function delete_check2(num){
+  let result = window.confirm("本当に削除してもよろしいですか？");
+  if(result){
+    window.location.href = '18.html';
+  }
+}
+
+
