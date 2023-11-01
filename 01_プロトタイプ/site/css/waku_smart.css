@@ -192,7 +192,7 @@ div.input_left{
 }
 
 div.right60{
-  width: 100%;
+  width: 50%;
 }
 
 .errmsg{
@@ -466,6 +466,7 @@ main h1.h1_kaiinn {
   font-size: 20px;
 }
 
+
 /*予約画面のcss*/
 
 .ryoukinnsetumei{
@@ -524,3 +525,4 @@ table.table_kaiinn th{
   width: 100%;
   text-align: center;
 }
+
