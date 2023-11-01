@@ -18,7 +18,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
+  overflow: auto;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 .comment{
@@ -26,10 +30,6 @@ body {
   top: 50px;
   left: 50px;
   font-size: 30px;
-}
-
-body::-webkit-scrollbar{
-  display: none;
 }
 
 div#wrap {
@@ -75,12 +75,12 @@ main.main_smart {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: auto;
 }
 
-main::-webkit-scrollbar {
+main::-webkit-scrollbar{
   display: none;
 }
+
 
 div#h2 {
   margin: 5px 0 0 0;
@@ -323,6 +323,10 @@ main h1.h1_kaiinn {
   background-color: #ff8c00;
 }
 
+.bg_def{
+  background-color: #15202b;
+}
+
 /*navのCSS*/
 /* Navbar & Navmenu color */
 :root {
@@ -486,7 +490,9 @@ main h1.h1_kaiinn {
 
 /*予約確認画面のCSS*/
 table.table_kaiinn,
-table.table_kaiinn_syousai{
+table.table_kaiinn_syousai,
+table.table_akinow,
+table.table_busy{
   width: 95%;
   margin-top: 10px;
   text-align: center;
@@ -495,7 +501,9 @@ table.table_kaiinn_syousai{
 }
 
 table.table_kaiinn tr,
-table.table_kaiinn_syousai tr{
+table.table_kaiinn_syousai tr,
+table.table_akinow tr,
+table.table_busy tr{
   height: 40px;
   border: 1px solid white;
   background-color: #71a6ea;
@@ -512,7 +520,11 @@ table.table_kaiinn tr.hover:hover{
 table.table_kaiinn td,
 table.table_kaiinn th,
 table.table_kaiinn_syousai td,
-table.table_kaiinn_syousai th{
+table.table_kaiinn_syousai th,
+table.table_akinow td,
+table.table_akinow th,
+table.table_busy td,
+table.table_busy th{
   border: 1px solid white;
   line-height: 40px;
 }
@@ -541,5 +553,15 @@ table.table_kaiinn_syousai th{
 
 table.table_kaiinn_syousai td.left{
   width: 100px;
+}
+
+
+/*空き情報ページのCSS*/
+table.table_akinow{
+  width: 95%;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
 }
 
