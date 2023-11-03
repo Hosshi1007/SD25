@@ -2,157 +2,188 @@
 
 <html lang="ja">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
-    <title>71.html</title>
+  <title>71.html</title>
 
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <link rel="stylesheet" type="text/css" href="css/table.css">
-    <link rel="stylesheet" type="text/css" href="css/table2.css">
-    <link rel="stylesheet" type="text/css" href="css/bunseki.css">
-    <link rel="stylesheet" type="text/css" href="bunseki.css">
-    <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/waku.css">
+  <link rel="stylesheet" type="text/css" href="css/table.css">
+  <link rel="stylesheet" type="text/css" href="css/table2.css">
+  <link rel="stylesheet" type="text/css" href="css/bunseki.css">
+  <link rel="stylesheet" type="text/css" href="bunseki.css">
+  <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
 
-    <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
 
-  </head>
+</head>
 
 
-  <body>
+<body>
 
-    <div id="wrap">
-      <header>
+  <div id="wrap">
+    <header>
 
-        <div id="icon">
-          <a href="126.html">
-            <img src="images/S.I.N.G.S.png">
-            <p>店長用 from S.I.N.G.S</p>
-          </a>
+      <div id="icon">
+        <a href="126.html">
+          <img src="images/S.I.N.G.S.png">
+          <p>店長用 from S.I.N.G.S</p>
+        </a>
+      </div>
+
+      <div id="h1">
+        <div id="textbox">
+          相関分析
         </div>
+      </div>
 
-        <div id="h1">
-          <div id="textbox">
-            相関分析
-          </div>
+    </header>
+
+
+    <nav id="gloval-nav">
+      <div class="nav_textbox">
+        <a href="127.html">分析TOP</a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+      <div class="nav_textbox">
+        <a href="#"></a>
+      </div>
+    </nav>
+
+
+    <main>
+
+      <div id="h2">
+        <div id="textbox2" style="text-align: left;">
+          全ての項目に入力して「分析実行」を押してください
         </div>
-
-      </header>
-
-
-      <nav id="gloval-nav">
-        <div class="nav_textbox">
-          <a href="127.html">分析TOP</a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-      </nav>
+      </div>
 
 
-      <main>
+      <div id="gamen_nyuuryoku">
+        <div class="errmsg_h1"></div>
+        <form id="form_nyuuryoku" method="post" action="76.html">
 
-        <div id="h2">
-          <div id="textbox2" style="text-align: left;">
-            全ての項目に入力して「分析実行」を押してください
-          </div>
-        </div>
+          <label>
+            <div class="input_left">分析期間(開始)：</div>
+            <div class="date">
+              <input type="date" name="start" class="select" value="2023-01-01">
+            </div>
+          </label>
+          <div class="errmsg"></div>
+
+          <label>
+            <div class="input_left">分析期間(終了)：</div>
+            <div class="date">
+              <input type="date" name="end" class="select" value="2023-10-31">
+            </div>
+          </label>
+          <div class="errmsg"></div>
+
+          <label>
+            <div class="input_left">分析プリセット：</div>
+            <div>
+              <select class="select">
+                <option value="" selected>選択してください</option>
+                <option value="0">深夜のデザートは誰向けがいいか調査</option>
+              </select>
+            </div>
+          </label>
+          <div class="errmsg"></div>
+
+          <label>
+            <div class="input_left">知りたい結果：</div>
+            <div>
+              <select class="select">
+                <option value="" selected>選択してください</option>
+                <option value="0">メニュー売上金額</option>
+                <option value="0">メニュー売上数量</option>
+                <option value="0">利用累計時間</option>
+                <option value="0">１利用に対するメニュー注文数</option>
+                <option value="0">１時間当たりの売上</option>
+                <option value="0" selected>年代ごとの人数割合</option>
+              </select>
+            </div>
+          </label>
+          <div class="errmsg"></div>
+
+          <label>
+            <div class="input_left">顧客条件 職業：</div>
+            <div>
+              <select class="select">
+                <option value="" selected>選択してください</option>
+                <option value="0">社会人</option>
+                <option value="1">高校生</option>
+                <option value="1">大学生</option>
+                <option value="1">自営業</option>
+              </select>
+            </div>
+          </label>
+
+          <label>
+            <div class="input_left">顧客条件 年代：</div>
+            <div>
+              <select class="select">
+                <option value="" selected>選択してください</option>
+                <option value="0">~19</option>
+                <option value="1">20~29</option>
+                <option value="1">30~39</option>
+                <option value="1">40~49</option>
+                <option value="1">50~59</option>
+                <option value="1">60~</option>
+              </select>
+            </div>
+          </label>
+
+          <label>
+            <div class="input_left">利用条件 時間帯：</div>
+            <div>
+              <select class="select">
+                <option value="" selected>選択してください</option>
+                <option value="0">10-12</option>
+                <option value="1">12-17</option>
+                <option value="1">17-21</option>
+                <option value="1" selected>21-25</option>
+              </select>
+            </div>
+          </label>
+
+          <label>
+            <div class="input_left">飲食条件 メニュージャンル：</div>
+            <div>
+              <select class="select">
+                <option value="" selected>選択してください</option>
+                <option value="0">フード</option>
+                <option value="1">ソフトドリンク</option>
+                <option value="2">アルコール</option>
+                <option value="3" selected>デザート</option>
+              </select>
+            </div>
+          </label>
+
+          <button id="button" type="submit">分析実行</button>
+        </form>
+
+    </main>
+  </div>
 
 
-        <div id="gamen_nyuuryoku">
-          <div class="errmsg_h1"></div>
-          <form id="form_nyuuryoku" method="post" action="76.html">
-            <label>
-              <div class="input_left">分析期間：</div>
-              <div class="date">
-                <input type="date" name="" maxlength="8" class="select" required>
-              </div>
-            </label>
-            <div class="errmsg"></div>
-            <label class="upbr">
-              <div class="input_left">ジャンル1：</div>
-                <div>
-                  <select class="select" required>
-                    <option value="" selected>選択してください</option>
-                    <option value="0" >職業</option>
-                    <option value="1" >年齢</option>
-                  </select>
-                </div>
-            </label>
-            <label>
-              <div class="input_left">条件1：</div>
-                <div>
-                  <select class="select" required>
-                    <option value="" selected>選択してください</option>
-                    <option value="0" >職業</option>
-                    <option value="1" >年齢</option>
-                  </select>
-                </div>
-            </label>
-            <label>
-              <div class="input_left">条件2：</div>
-                <div>
-                  <select class="select" required>
-                    <option value="" selected>選択してください</option>
-                    <option value="0" >職業</option>
-                    <option value="1" >年齢</option>
-                  </select>
-                </div>
-            </label>
-            <label class="upbr">
-              <div class="input_left">ジャンル2：</div>
-                <div>
-                  <select class="select" required>
-                    <option value="" selected>選択してください</option>
-                    <option value="0" >職業</option>
-                    <option value="1" >年齢</option>
-                  </select>
-                </div>
-            </label>
-            <label>
-              <div class="input_left">条件1：</div>
-                <div>
-                  <select class="select" required>
-                    <option value="" selected>選択してください</option>
-                    <option value="0" >職業</option>
-                    <option value="1" >年齢</option>
-                  </select>
-                </div>
-            </label>
-            <label>
-              <div class="input_left">条件2：</div>
-                <div>
-                  <select class="select" required>
-                    <option value="" selected>選択してください</option>
-                    <option value="0" >職業</option>
-                    <option value="1" >年齢</option>
-                  </select>
-                </div>
-            </label>
-            <button id="button" type="submit">分析実行</button>
-          </form>
-
-      </main>
-    </div>
-
-
-  </body>
+</body>
 
 </html>

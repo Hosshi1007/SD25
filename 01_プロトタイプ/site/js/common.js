@@ -205,4 +205,8 @@ function delete_check2(num){
   }
 }
 
+function jyoukenhozon(string){
+  alert("検索条件を保存しました")
+}
+
 

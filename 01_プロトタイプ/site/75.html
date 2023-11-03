@@ -11,13 +11,11 @@
     <title>75.html</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
     <link rel="stylesheet" type="text/css" href="css/table.css">
     <link rel="stylesheet" type="text/css" href="css/table2.css">
-
-    <link rel="stylesheet" type="text/css" href="css/bunseki_kekka.css">
-    <link rel="stylesheet" type="text/css" href="bunseki_kekka.css">
+    <link rel="stylesheet" type="text/css" href="css/charts.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
 
     <script type="text/javascript" src="js/common.js"></script>
 
@@ -71,29 +69,53 @@
 
         <div id="h2">
           <div id="textbox2" style="text-align: left;">
-            入力された条件での分析結果は以下の通りです。
+            分析結果は以下の通りです。<br>
+            分析期間[2023-01-01 ~ 2023-10-31]<br>
+            条件1[売上数量の多い順]
           </div>
         </div>
 
 
         <div id="gamen">
-          <table class="back-ground">
-            <tr>
-              <td>分析結果</td>
-              <td>直近1か月</td>
-            </tr>
-            <tr>
-              <td>最も売れたメニュー</td>
-              <td>フライドポテト</td>
-            </tr>
-            <tr>
-              <td>最も売れたジャンル</td>
-              <td>デザート</td>
-            </tr>
-            <tr>
-              <td>売上個数：イチゴパフェ</td>
-              <td class="number">30</td>
-            </tr>
+          
+          <table class="table_bunseki show-primary-axis show-labels charts-css bar show-10-secondary-axes show-heading show-primary-axis data-spacing-3">
+
+            <caption> 分析結果 </caption>
+          
+            <thead>
+              <tr>
+                <th scope="col"> 名称 </th>
+                <th scope="col"> 数量 </th>
+              </tr>
+            </thead>
+          
+            <tbody>
+              <tr>
+                <th scope="row"> うますぎるポテト </th>
+                <td style="--size:calc(1500 / 1500);"><span class="data">1500</span></td>
+              </tr>
+              <tr>
+                <th scope="row"> 天才的な唐揚げ </th>
+                <td style="--size:calc(1000 / 1500);"><span class="data">1000</span></td>
+              </tr>
+              <tr>
+                <th scope="row"> 世界一のお好み焼き </th>
+                <td style="--size:calc(800 / 1500);"><span class="data">800</span></td>
+              </tr>
+              <tr>
+                <th scope="row"> マルゲリータピザ </th>
+                <td style="--size:calc(650 / 1500);"><span class="data">650</span></td>
+              </tr>
+              <tr>
+                <th scope="row"> ハワイアンピザ </th>
+                <td style="--size:calc(400 / 1500);"><span class="data">400</span></td>
+              </tr>
+              <tr>
+                <th scope="row"> 宇宙一のたこ焼き </th>
+                <td style="--size:calc(50 / 1500);"><span class="data">50</span></td>
+              </tr>
+            </tbody>
+          
           </table>
         </div>
       </main>

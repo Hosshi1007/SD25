@@ -11,6 +11,7 @@
     <title>52.予約情報 登録(受付)</title>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/waku.css">
     <link rel="stylesheet" type="text/css" href="css/nyuuryoku.css">
     <script type="text/javascript" src="js/common.js"></script>
@@ -65,24 +66,48 @@
           </div>
         </div>
 
+        <h2 class="loginnow">
+          従業員ID00001 武 でログイン中
+          <button onclick="location.href='142.html'">ログアウト</button>
+        </h2>
+
         <div id="gamen_nyuuryoku">
-          <div class="errmsg_h1">　</div>
+          <div class="errmsg_h1"></div>
           <form id="form_nyuuryoku" method="post" action="#">
+
             <label class="input_label">
-              <div class="input_left">予約日：</div>
-              <div><input type="date" name="stock_name" maxlength="8" placeholder="例)たこやき" required></div>
+              <div class="input_left">登録種別：</div>
+              <div>
+                <select class="select" name="mode" required>
+                  <option value="">選択してください</option>
+                  <option value="0" selected>予約</option>
+                  <option value="1">今すぐ利用</option>
+                </select>
+              </div>
             </label>
             <div class="errmsg"></div>
 
             <label class="input_label">
-              <div class="input_left">来店時間：</div>
+              <div class="input_left">会員ID：</div>
+              <div><input type="text" name="rev_name" value="00001" required></div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">利用日：</div>
+              <div><input type="date" name="date_riyou" value="2023-11-07" required></div>
+            </label>
+            <div class="errmsg"></div>
+
+            <label class="input_label">
+              <div class="input_left">利用開始時間：</div>
               <div>
                 <select class="select" required="">
-                  <option value="" selected="">選択してください</option>
+                  <option value="">選択してください</option>
                   <option value="0">10:00</option>
                   <option value="0">11:00</option>
                   <option value="0">12:00</option>
-                  <option value="1">13:00</option>
+                  <option value="1" selected>13:00</option>
                   <option value="2">14:00</option>
                   <option value="3">15:00</option>
                   <option value="0">16:00</option>
@@ -100,7 +125,7 @@
             <div class="errmsg"></div>
 
             <label class="input_label">
-              <div class="input_left">退店時間：</div>
+              <div class="input_left">利用終了時間：</div>
               <div>
                 <select class="select" required="">
                   <option value="" selected="">選択してください</option>
@@ -113,7 +138,7 @@
                   <option value="0">17:00</option>
                   <option value="0">18:00</option>
                   <option value="0">19:00</option>
-                  <option value="0">20:00</option>
+                  <option value="0" selected>20:00</option>
                   <option value="0">21:00</option>
                   <option value="0">22:00</option>
                   <option value="0">23:00</option>
@@ -133,7 +158,7 @@
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
-                  <option value="5">5</option>
+                  <option value="5" selected>5</option>
                   <option value="6">6</option>
                 </select>
               </div>

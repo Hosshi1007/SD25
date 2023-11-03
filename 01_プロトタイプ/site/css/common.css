@@ -2,3 +2,34 @@
 
 /*共通のスタイル*/
 
+/*ログイン情報のCSS*/
+.loginnow{
+    margin: 15px auto 0 auto;
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    border: 1px solid white;
+
+}
+
+
+/*分析結果のtableのCSS*/
+
+.table_bunseki{
+    width: 90%;
+    color: white;
+    margin-top: 50px;
+}
+
+.color_white{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+
+

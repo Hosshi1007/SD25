@@ -114,4 +114,12 @@ main#main_TOPetc h1{
 .h2_top{
   color: white;
   font-size: 20px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.daimei{
+  color: white;
+  font-size: 26px;
+  margin: 0 0 0 50px ;
 }
