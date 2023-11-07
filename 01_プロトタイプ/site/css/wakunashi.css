@@ -527,14 +527,14 @@ a.btn_60_1 {
   font-weight: bold;
   border-radius: 1rem;
   border-bottom: 7px solid #C00000;
-  background: #FF0000;
+  background: #c00000;
   color: #f4f4ff;
   font-size: 20px;
   display:inline-block;
 }
 a.btn_60_1:hover {
   margin-top: 6px;
-  border-bottom: 1px solid #FF0000;
+  border-bottom: 1px solid #c00000;
   color: #fff;
 }
 
