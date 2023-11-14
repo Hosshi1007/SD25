@@ -527,7 +527,8 @@ a.btn_60_1 {
   font-weight: bold;
   border-radius: 1rem;
   border-bottom: 7px solid #B00000;
-  background: #f00000;
+  /*丸の内線レッド*/
+  background: #e60012;
   color: #f4f4ff;
   font-size: 20px;
   display:inline-block;
@@ -549,7 +550,8 @@ a.btn_60 {
   padding: 0.5rem 1rem;
   font-weight: bold;
   border-radius: 1rem;
-  background: #808080;
+  /*日比谷線シルバー*/
+  background: #9caeb7;
   color: #f4f4ff;
   font-size: 20px;
   display:inline-block;
@@ -567,6 +569,7 @@ a.btn_60_2 {
   padding: 0.5rem 1rem;
   font-weight: bold;
   border-radius: 1rem;
+  /*有楽町線ゴールド*/
   background: #d7c447;
   color: #f4f4ff;
   font-size: 20px;
