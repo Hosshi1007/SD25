@@ -556,6 +556,24 @@ a.btn_60 {
   pointer-events: none;
 }
 
+
+a.btn_60_2 {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  background: #ffff00;
+  color: #f4f4ff;
+  font-size: 20px;
+  display:inline-block;
+  pointer-events: none;
+}
+
 #t-60 tr td{
   padding: 0 0 10px 20px;
 }
