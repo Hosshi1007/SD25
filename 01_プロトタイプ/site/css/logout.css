@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.logout {
+   font-size: 15px;
+   color: #fff;
+}
+
+.logout from input {
+   margin-top: 5px;
+   padding: 0px 20px;
+   border-radius: 5px;
+   font-size: 17px;
+   background-color: #d7c447;
+}

@@ -1,150 +1,153 @@
 <!DOCTYPE html>
 
 <html lang="ja">
+   <head>
+      <meta charset="utf-8" />
 
-  <head>
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes"
+      />
 
-    <meta charset="utf-8">
+      <title>47.予約情報 一覧/検索</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+      <link rel="stylesheet" type="text/css" href="css/reset.css" />
+      <link rel="stylesheet" type="text/css" href="css/common.css" />
+      <link rel="stylesheet" type="text/css" href="css/waku.css" />
+      <link rel="stylesheet" type="text/css" href="css/table.css" />
+      <link rel="stylesheet" type="text/css" href="css/table2.css" />
+      <link rel="stylesheet" type="text/css" href="css/kaiin.css" />
+      <link rel="stylesheet" type="text/css" href="css/logout.css" />
+      <script type="text/javascript" src="js/common.js"></script>
+   </head>
 
-    <title>47.予約情報 一覧/検索</title>
+   <body>
+      <div id="wrap">
+         <header>
+            <div id="icon">
+               <a href="22.html">
+                  <img src="images/S.I.N.G.S.png" />
+                  <p>従業員用 from S.I.N.G.S</p>
+               </a>
+            </div>
+            <div id="h1">
+               <div id="textbox">予約情報 一覧/検索</div>
+            </div>
+         </header>
 
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/waku.css">
-    <link rel="stylesheet" type="text/css" href="css/table.css">
-    <link rel="stylesheet" type="text/css" href="css/table2.css">
-    <link rel="stylesheet" type="text/css" href="css/kaiin.css">
-    <script type="text/javascript" src="js/common.js"></script>
+         <nav id="gloval-nav">
+            <div class="nav_textbox">
+               <a href="137.html">受付TOP</a>
+            </div>
+            <div class="nav_textbox">
+               <a href="#"></a>
+            </div>
+            <div class="nav_textbox">
+               <a href="#"></a>
+            </div>
+            <div class="nav_textbox">
+               <a href="#"></a>
+            </div>
+            <div class="nav_textbox">
+               <a href="#"></a>
+            </div>
+            <div class="logout">
+               <from>
+                  ログイン中:J0012 武裕<br />
+                  <input type="submit" value="ログアウト" />
+               </from>
+            </div>
+         </nav>
 
-  </head>
+         <main>
+            <div id="h2">
+               <div id="textbox2">
+                  予約情報を検索できます。項目をクリックすると詳細画面へ行きます<br />
+                  会員IDを入力して検索が出来ます。<br /><br />
+                  <label class="input_label">
+                     会員ID：<input
+                        type="text"
+                        name="sei"
+                        maxlength="5"
+                        placeholder="会員ID"
+                        required
+                     />
+                  </label>
+                  <button
+                     id="button"
+                     class="html90"
+                     onclick="location.href='47.html'"
+                  >
+                     検索
+                  </button>
+               </div>
+            </div>
 
+            <div id="gamen" class="html38">
+               <p id="html90" class="html90">検索結果：すべて</p>
 
-  <body>
-
-    <div id="wrap">
-      <header>
-        <div id="icon">
-          <a href="22.html">
-            <img src="images/S.I.N.G.S.png">
-            <p>従業員用 from S.I.N.G.S</p>
-          </a>
-        </div>
-        <div id="h1">
-          <div id="textbox">
-            予約情報 一覧/検索
-          </div>
-        </div>
-      </header>
-
-
-      <nav id="gloval-nav">
-        <div class="nav_textbox">
-          <a href="137.html">受付TOP</a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-        <div class="nav_textbox">
-          <a href="#"></a>
-        </div>
-      </nav>
-
-
-      <main>
-        <div id="h2">
-          <div id="textbox2">
-            予約情報を検索できます。項目をクリックすると詳細画面へ行きます<br>
-            会員IDを入力して検索が出来ます。<br><br>
-            <label class="input_label">
-              会員ID：<input type="text" name="sei" maxlength="5" placeholder="会員ID" required>
-            </label>
-            <button id="button" class="html90" onclick="location.href='47.html'">検索</button>
-          </div>
-        </div>
-
-
-        <div id="gamen" class="html38">
-
-          <p id="html90" class="html90">検索結果：すべて</p>
-          
-          <div id="html5" class="table">
-            <table class="findID">
-              <tr>
-                <th id="html5">予約ID</th>
-                <th id="html5">会員ID</th>
-                <th id="html5">名前</th>
-                <th id="html5">予約日</th>
-                <th id="html5">来店時間</th>
-              </tr>
-              <tr onclick="yoyaku_click(1);" class="hover">
-                <td>00001</td>
-                <td>00001</td>
-                <td>武　豊</td>
-                <td>2023/10/12</td>
-                <td>22:00</td>
-              </tr>
-              <tr onclick="yoyaku_click(2);" class="hover">
-                <td>00002</td>
-                <td>00002</td>
-                <td>工藤　進一</td>
-                <td>2023/10/14</td>
-                <td>13:00</td>
-              </tr>
-              <tr onclick="yoyaku_click(3);" class="hover">
-                <td>00003</td>
-                <td>00003</td>
-                <td>纐纈　人間</td>
-                <td>2023/10/14</td>
-                <td>15:30</td>
-              </tr>
-              <tr onclick="yoyaku_click(4);" class="hover">
-                <td>00004</td>
-                <td>00004</td>
-                <td>山田　太郎</td>
-                <td>2023/10/14</td>
-                <td>15:30</td>
-              </tr>
-              <tr onclick="yoyaku_click(5);" class="hover">
-                <td>00005</td>
-                <td>00005</td>
-                <td>大山田　太郎</td>
-                <td>2023/10/14</td>
-                <td>15:30</td>
-              </tr>
-              <tr onclick="yoyaku_click(6);" class="hover">
-                <td>00006</td>
-                <td>00006</td>
-                <td>中山田　太郎</td>
-                <td>2023/10/14</td>
-                <td>15:30</td>
-              </tr>
-              <tr onclick="yoyaku_click(7);" class="hover">
-                <td>00007</td>
-                <td>00007</td>
-                <td>小山田　太郎</td>
-                <td>2023/10/14</td>
-                <td>15:30</td>
-              </tr>
-            </table>
-          </div>
-
-        </div>
-
-      </main>
-
-    </div>
-
-  </body>
-
+               <div id="html5" class="table">
+                  <table class="findID">
+                     <tr>
+                        <th id="html5">予約ID</th>
+                        <th id="html5">会員ID</th>
+                        <th id="html5">名前</th>
+                        <th id="html5">予約日</th>
+                        <th id="html5">来店時間</th>
+                     </tr>
+                     <tr onclick="yoyaku_click(1);" class="hover">
+                        <td>00001</td>
+                        <td>00001</td>
+                        <td>武　豊</td>
+                        <td>2023/10/12</td>
+                        <td>22:00</td>
+                     </tr>
+                     <tr onclick="yoyaku_click(2);" class="hover">
+                        <td>00002</td>
+                        <td>00002</td>
+                        <td>工藤　進一</td>
+                        <td>2023/10/14</td>
+                        <td>13:00</td>
+                     </tr>
+                     <tr onclick="yoyaku_click(3);" class="hover">
+                        <td>00003</td>
+                        <td>00003</td>
+                        <td>纐纈　人間</td>
+                        <td>2023/10/14</td>
+                        <td>15:30</td>
+                     </tr>
+                     <tr onclick="yoyaku_click(4);" class="hover">
+                        <td>00004</td>
+                        <td>00004</td>
+                        <td>山田　太郎</td>
+                        <td>2023/10/14</td>
+                        <td>15:30</td>
+                     </tr>
+                     <tr onclick="yoyaku_click(5);" class="hover">
+                        <td>00005</td>
+                        <td>00005</td>
+                        <td>大山田　太郎</td>
+                        <td>2023/10/14</td>
+                        <td>15:30</td>
+                     </tr>
+                     <tr onclick="yoyaku_click(6);" class="hover">
+                        <td>00006</td>
+                        <td>00006</td>
+                        <td>中山田　太郎</td>
+                        <td>2023/10/14</td>
+                        <td>15:30</td>
+                     </tr>
+                     <tr onclick="yoyaku_click(7);" class="hover">
+                        <td>00007</td>
+                        <td>00007</td>
+                        <td>小山田　太郎</td>
+                        <td>2023/10/14</td>
+                        <td>15:30</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+         </main>
+      </div>
+   </body>
 </html>
