@@ -578,6 +578,7 @@ a.btn_60_2 {
 }
 
 #t-60 tr td{
+  width: 300px;
   padding: 0 0 10px 20px;
 }
 
