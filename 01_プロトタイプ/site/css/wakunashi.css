@@ -594,6 +594,7 @@ a.btn_60_2 {
 }
 
 #d-60{
+  width: auto;
   display: flex;
 }
 
