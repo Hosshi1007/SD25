@@ -593,6 +593,10 @@ a.btn_60_2 {
   font-size: 1.2rem;
 }
 
+#d-60{
+  display: flex;
+}
+
 #button60{
   
   right: 150px;
